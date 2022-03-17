@@ -3,7 +3,8 @@ const { height, width } = Dimensions.get('window')
 export const styles = StyleSheet.create({
 
     maincontainer: {
-        flex: 1
+        flex: 1,
+
     },
     mainline: {
         flexDirection: 'row',
@@ -11,6 +12,8 @@ export const styles = StyleSheet.create({
         justifyContent: "flex-end",
         paddingRight: 10,
         paddingLeft: 10,
+        marginTop: 10
+
 
     },
     //first Container

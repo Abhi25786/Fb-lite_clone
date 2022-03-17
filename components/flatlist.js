@@ -31,18 +31,18 @@ export default DATA = [
     name: "Abhi Thakur",
   },
   {
-    key: "1",
+    key: "7",
     uri: require('../Images/image1.jpg'),
     name: "Abhi Thakur",
 
   },
   {
-    key: "2",
+    key: "8",
     uri: require('../Images/image2.jpg'),
     name: "Abhi Thakur",
   },
   {
-    key: "3",
+    key: "9",
     uri: require('../Images/image3.jpg'),
     name: "Abhi Thakur",
   },

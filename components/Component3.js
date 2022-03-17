@@ -41,7 +41,7 @@ function Component3() {
                         )
                     }}
                 />
-                <Button title='View all stories' color={"#87cefa"} />
+                <Button title='View all stories' color={"#87cefa"} accessibilityLabel={"Abhi"} />
 
 
             </View>

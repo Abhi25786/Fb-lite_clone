@@ -8,7 +8,7 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
+  SafeAreaView, StatusBar, View
 
 } from 'react-native';
 import styling from './css/styling';
@@ -21,16 +21,21 @@ const App = () => {
 
 
   return (
-    <SafeAreaView style={styling.maincontainer}>
-      {/* Status Bar */}
-      <Headcomponent />
+    <>
+      <View>
+        <StatusBar barStyle='dark-content' backgroundColor={"transparent"} />
+      </View>
+      <SafeAreaView style={styling.maincontainer}>
+        {/* Status Bar */}
+        <Headcomponent />
 
 
-      {/* //Thirdcontainer */}
-      <Component3 />
+        {/* //Thirdcontainer */}
+        <Component3 />
 
 
-    </SafeAreaView>
+      </SafeAreaView>
+    </>
   );
 };
 
