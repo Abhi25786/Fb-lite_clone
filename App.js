@@ -15,6 +15,7 @@ import styling from './css/styling';
 import Headcomponent from './components/Headcomponent'
 
 import Component3 from './components/Component3';
+import Profile from './screens/profilescreen/profilecode/Profile';
 
 
 const App = () => {
@@ -28,7 +29,7 @@ const App = () => {
       <SafeAreaView style={styling.maincontainer}>
         {/* Status Bar */}
         <Headcomponent />
-
+        {/* <Profile /> */}
 
         {/* //Thirdcontainer */}
         <Component3 />
