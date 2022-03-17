@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
         justifyContent: "flex-end",
         paddingRight: 10,
         paddingLeft: 10,
-        marginTop: 10
+
 
 
     },
@@ -143,9 +143,8 @@ export const styles = StyleSheet.create({
     //postlist css
     postimages: {
         height: 400,
-        width: 400,
+        width: width,
 
-        alignItems: "center"
     },
     post: {
         flexDirection: "row",

@@ -8,7 +8,7 @@ import Postlist from './Postlist'
 
 function Component3() {
     return (
-        <ScrollView style={styling.ScrollViewborder} >
+        <ScrollView style={styling.ScrollViewborder} scrollIndicatorInsets={false} >
 
             <Statussaction />
             <View style={styling.border} >
