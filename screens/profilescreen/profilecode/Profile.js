@@ -48,6 +48,19 @@ function Profile() {
 
                                 </View>
                             </View>
+                            <View style={profile.Headpart}>
+                                <Image source={require('../profileimages/heart.png')} style={profile.smaillicons} />
+                                <Text style={profile.smailliconstext}>Single</Text>
+                            </View>
+                            <View style={profile.Headpart}>
+                                <Image source={require('../profileimages/wifi.png')} style={profile.smaillicons} />
+                                <Text style={profile.smailliconstext}>Followed by 100 persion</Text>
+                            </View>
+                            <View style={profile.Headpart}>
+                                <Image source={require('../profileimages/heart.png')} style={profile.smaillicons} />
+                                <Text style={profile.smailliconstext}>Single</Text>
+                            </View>
+
 
                         </View>
                     </ScrollView>
