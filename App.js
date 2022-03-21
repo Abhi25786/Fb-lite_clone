@@ -31,11 +31,11 @@ const App = () => {
       {/* this is our main screen */}
       <SafeAreaView style={styling.maincontainer}>
         {/* header part  */}
-        <Headcomponent />
-        {/* <Profile /> */}
+        {/* <Headcomponent /> */}
+        <Profile />
 
         {/* //Thirdcontainer */}
-        <Component3 />
+        {/* <Component3 /> */}
 
 
       </SafeAreaView>

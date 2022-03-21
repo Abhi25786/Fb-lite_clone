@@ -57,7 +57,7 @@ export const styles = StyleSheet.create({
         width: width / 20,
         marginStart: 20,
         marginEnd: 20,
-        marginTop: 17,
+
     },
     homemain: {
         justifyContent: "center"
