@@ -58,7 +58,7 @@ function Profile() {
                             </View>
                             <View style={profile.Headpart}>
                                 <Image source={require('../profileimages/heart.png')} style={profile.smaillicons} />
-                                <Text style={profile.smailliconstext}>Single</Text>
+                                <Text style={profile.smailliconstext}>See more about yourself</Text>
                             </View>
 
 
