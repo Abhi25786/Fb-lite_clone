@@ -59,6 +59,25 @@ export const styles = StyleSheet.create({
         marginEnd: 20,
         marginTop: 17,
     },
+    homemain: {
+        justifyContent: "center"
+    },
+    hometext: {
+        color: "white",
+        fontSize: 10
+    },
+    hometextstyling: {
+        position: "absolute",
+        backgroundColor: "red",
+        borderRadius: 10,
+        paddingLeft: 5,
+        paddingRight: 5,
+        margin: 10,
+        marginLeft: 25,
+        borderColor: "white",
+        borderWidth: 1
+    }
+    ,
 
     //background color
     ScrollViewborder: {
@@ -172,6 +191,7 @@ export const styles = StyleSheet.create({
         height: 20,
         width: 20,
     }
+
 
 
 

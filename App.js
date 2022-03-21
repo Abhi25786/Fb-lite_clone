@@ -14,7 +14,7 @@ import {
 import styling from './css/styling';
 import Headcomponent from './components/Headcomponent'
 
-import Component3 from './components/Component3';
+import Component3 from './components/HomeComponent';
 import Profile from './screens/profilescreen/profilecode/Profile';
 
 
@@ -23,11 +23,14 @@ const App = () => {
 
   return (
     <>
+      {/* this is use for status bar theming */}
       <View>
         <StatusBar barStyle='dark-content' backgroundColor={"transparent"} />
       </View>
+
+      {/* this is our main screen */}
       <SafeAreaView style={styling.maincontainer}>
-        {/* Status Bar */}
+        {/* header part  */}
         <Headcomponent />
         {/* <Profile /> */}
 
