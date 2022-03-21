@@ -60,6 +60,15 @@ function Profile() {
                                 <Image source={require('../profileimages/heart.png')} style={profile.smaillicons} />
                                 <Text style={profile.smailliconstext}>See more about yourself</Text>
                             </View>
+                            <View style={{ flex: 1, flexDirection: "row", justifyContent: "space-between" }}>
+                                <View style={{ flex: 0.9, flexDirection: "column" }}>
+                                    <Text style={{ fontWeight: "bold", color: "black" }}>Friends</Text>
+                                    <Text>985 friends</Text>
+                                </View>
+                                <View style={{ flex: 1, alignItems: "flex-end", }}>
+                                    <Text style={{ color: "blue" }}>Abhi</Text>
+                                </View>
+                            </View>
 
 
                         </View>
