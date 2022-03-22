@@ -3,17 +3,16 @@ const { height, width } = Dimensions.get('window')
 export const styles = StyleSheet.create({
     //Main Conatiner View
     maincontainer: {
-        flex: 1
-    }
-    ,
+        flex: 1,
+        paddingBottom: 20
+    },
     //Status Bar css
     Headpart: {
         flexDirection: "row",
         paddingLeft: 20,
         alignItems: "center",
         paddingBottom: 10
-    }
-    ,
+    },
     smaillicons: {
         height: 15,
         width: 15,
@@ -49,7 +48,13 @@ export const styles = StyleSheet.create({
         borderWidth: 5,
         position: "absolute"
     },
+    imagecard: {
+        height: 100,
+        width: 100,
+        marginHorizontal: 10,
+        borderRadius: 10
 
+    },
 
 
 
