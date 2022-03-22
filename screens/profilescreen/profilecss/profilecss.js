@@ -55,7 +55,14 @@ export const styles = StyleSheet.create({
         borderRadius: 10
 
     },
+    border: {
+        marginTop: 1,
+        backgroundColor: "#ffff",
+        padding: 10,
+        flexDirection: "row",
+        justifyContent: "space-between",
 
+    },
 
 
 

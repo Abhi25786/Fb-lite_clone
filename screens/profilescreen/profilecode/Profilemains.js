@@ -1,24 +1,24 @@
 import React from 'react'
-import { SafeAreaView, Text, View, Image, ScrollView, FlatList, Button, TouchableOpacity, } from 'react-native'
+import { SafeAreaView, Text, View, Image, ScrollView, FlatList, Button, TouchableOpacity, TextInput } from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import styles from '../../../css/styling'
 import profile from '../profilecss/profilecss'
 import Profileflatlist from './Profileflatlist'
 import Postlist from '../../../components/Postlist'
+import Statussaction from '../../../components/Statussaction'
+import Headpart from '../profilecomponents/Headpart'
+import Profilestatus from '../profilecomponents/Profilestatus'
 
 function Profile() {
     return (
         <>
             <SafeAreaView style={profile.maincontainer}>
-                <View style={profile.Headpart}>
-                    <Image source={require('../profileimages/left-arrow.png')} style={profile.smaillicons} />
-                    <Text style={profile.smailliconstext}>Abhi Thakur</Text>
-                </View>
+                {/* status bar */}
+                <Headpart />
                 <View style={{ borderTopColor: "lightgray", borderTopWidth: 1 }}>
                     <ScrollView styles={{ marginBottom: 100 }}>
                         <View style={{ margin: 10 }}>
                             <View style={{ marginBottom: 10, justifyContent: "center" }}>
-
 
                                 <View style={profile.container}>
                                     <Image source={require('../profileimages/profile_user.jpg')} style={profile.profilebackimg} />
@@ -88,13 +88,16 @@ function Profile() {
                         </View>
                         <Divider width={4} />
                         <View style={profile.Headpart}>
-                            <View style={{ flexDirection: "row", backgroundColor: "lightgray", borderRadius: 20, marginTop: 10, padding: 5 }}>
+                            <View style={{ flexDirection: "row", backgroundColor: "lightgray", borderRadius: 20, marginTop: 10, padding: 5, alignItems: "center" }}>
                                 <Image source={require('../profileimages/uplode.png')} style={profile.smaillicons} />
                                 <Text style={profile.smailliconstext}>Photos</Text>
                             </View>
                         </View>
                         <Divider width={4} />
 
+                        <Profilestatus />
+
+                        {/* this is post list */}
                         <Postlist />
                     </ScrollView>
 

@@ -15,7 +15,7 @@ import styling from './css/styling';
 import Headcomponent from './components/Headcomponent'
 
 import Component3 from './components/HomeComponent';
-import Profile from './screens/profilescreen/profilecode/Profile';
+import Profile from './screens/profilescreen/profilecode/Profilemains';
 
 
 const App = () => {
@@ -31,11 +31,11 @@ const App = () => {
       {/* this is our main screen */}
       <SafeAreaView style={styling.maincontainer}>
         {/* header part  */}
-        {/* <Headcomponent /> */}
-        <Profile />
+        <Headcomponent />
+        {/* <Profile /> */}
 
         {/* //Thirdcontainer */}
-        {/* <Component3 /> */}
+        <Component3 />
 
 
       </SafeAreaView>

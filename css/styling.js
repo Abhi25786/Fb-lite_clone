@@ -78,7 +78,10 @@ export const styles = StyleSheet.create({
         borderWidth: 1
     }
     ,
-
+    picuplode: {
+        justifyContent: "center"
+    }
+    ,
     //background color
     ScrollViewborder: {
         backgroundColor: "#d3d3d3"

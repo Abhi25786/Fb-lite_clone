@@ -1,12 +1,13 @@
 import React from 'react'
-import { ScrollView, View, TouchableOpacity, Image, FlatList, TextInput, Text, Button } from 'react-native'
+import { ScrollView, View, TouchableOpacity, Image, FlatList, TextInput, Text, Button, VirtualizedList, D } from 'react-native'
+import { Divider } from 'react-native-elements/dist/divider/Divider'
 import styling from '../css/styling'
 import DATA from '../components/flatlist'
 function Postlist() {
     return (
         <>
 
-            <View >
+            <View style={{ paddingBottom: 10 }}>
 
 
                 <FlatList
@@ -15,8 +16,9 @@ function Postlist() {
                     data={DATA}
                     renderItem={(element) => {
                         return (
-                            <View >
-                                <View style={{ backgroundColor: "#ffff", marginTop: 10, justifyContent: "center" }}>
+                            <View>
+                                <View style={{ backgroundColor: "white" }}>
+                                    <Divider width={5} />
                                     <View style={styling.post}>
                                         <View >
                                             <TouchableOpacity><Image source={element.item.uri} style={styling.profilepic} /></TouchableOpacity>
