@@ -45,10 +45,10 @@ function Friendrequest() {
                                             <Text style={{ color: "black", fontWeight: "bold" }}>{element.item.name}</Text>
                                             <View style={{ flexDirection: 'row', justifyContent: "space-between", marginTop: 25 }}>
                                                 <View style={{ justifyContent: "center", paddingTop: 5, paddingBottom: 5, flexDirection: "row", borderRadius: 5, backgroundColor: "#1e90ff", flex: 0.5, marginRight: 10 }}>
-                                                    <Text style={{ color: "white" }}>Confirm</Text>
+                                                    <TouchableOpacity><Text style={{ color: "white" }}>Confirm</Text></TouchableOpacity>
                                                 </View>
                                                 <View style={{ justifyContent: "center", paddingTop: 5, paddingBottom: 5, flexDirection: "row", borderRadius: 5, backgroundColor: "lightgray", flex: 0.5, marginLeft: 10 }}>
-                                                    <Text style={{ color: "black" }}>Delete</Text>
+                                                    <TouchableOpacity><Text style={{ color: "black" }}>Delete</Text></TouchableOpacity>
                                                 </View>
                                             </View>
 
@@ -61,10 +61,42 @@ function Friendrequest() {
                                 )
                             }}
                         />
-
-
-
+                        <TouchableOpacity><View style={{ justifyContent: "center", paddingTop: 5, paddingBottom: 5, flexDirection: "row", borderRadius: 5, backgroundColor: "lightgray", marginHorizontal: 10 }}>
+                            <Text style={{ color: "black" }}>See All</Text>
+                        </View></TouchableOpacity>
                     </View>
+                    <Divider />
+                    <FlatList
+
+                        showsHorizontalScrollIndicator={false}
+                        data={DATA}
+                        renderItem={(element) => {
+                            return (
+
+                                <View style={{ flexDirection: 'row', marginHorizontal: 10, marginVertical: 10 }}>
+                                    <View style={{ flex: 0.2, justifyContent: "center", alignItems: "center" }}>
+                                        <Image source={element.item.uri} style={{ height: 70, width: 70, borderRadius: 50 }} />
+                                    </View>
+                                    <View style={{ flex: 0.8 }}>
+                                        <Text style={{ color: "black", fontWeight: "bold" }}>{element.item.name}</Text>
+                                        <View style={{ flexDirection: 'row', justifyContent: "space-between", marginTop: 25 }}>
+                                            <View style={{ justifyContent: "center", paddingTop: 5, paddingBottom: 5, flexDirection: "row", borderRadius: 5, backgroundColor: "#1e90ff", flex: 0.5, marginRight: 10 }}>
+                                                <Text style={{ color: "white" }}>Add Friend</Text>
+                                            </View>
+                                            <View style={{ justifyContent: "center", paddingTop: 5, paddingBottom: 5, flexDirection: "row", borderRadius: 5, backgroundColor: "lightgray", flex: 0.5, marginLeft: 10 }}>
+                                                <Text style={{ color: "black" }}>Delete</Text>
+                                            </View>
+                                        </View>
+
+                                    </View>
+
+
+                                </View>
+                                // <Image source={element.item.uri} />
+
+                            )
+                        }}
+                    />
                 </ScrollView>
             </View >
         </>
