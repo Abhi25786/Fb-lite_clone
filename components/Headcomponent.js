@@ -40,8 +40,8 @@ function Component1() {
 
 
             </View >
-            <NavigationContainer>
-                <Tab.Navigator screenOptions={{ tabBarShowLabel: false }}>
+            <NavigationContainer >
+                <Tab.Navigator screenOptions={{ tabBarShowLabel: false }} tabBarPosition={'top'}>
                     <Tab.Screen name="1" component={Home} options={{
                         tabBarIcon: ({ focused }) => (
                             <Image source={require('../Images/home.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
