@@ -4,6 +4,8 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { NavigationContainer } from '@react-navigation/native'
 import Home from './HomeComponent';
 import styling from '../css/styling'
+import Friendrequest from '../screens/friendriquest/Friendrequest';
+
 const Tab = createMaterialTopTabNavigator()
 
 function Component1() {
@@ -46,7 +48,7 @@ function Component1() {
                         ), tabBarItemStyle: { height: 40, }
 
                     }} />
-                    <Tab.Screen name="2" component={Home} options={{
+                    <Tab.Screen name="2" component={Friendrequest} options={{
                         tabBarIcon: ({ focused }) => (
                             <Image source={require('../Images/people.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
                         ), tabBarItemStyle: { height: 40, }
