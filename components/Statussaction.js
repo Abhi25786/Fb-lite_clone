@@ -6,7 +6,12 @@ function Statussaction() {
         <>
             <View >
                 <View style={styling.border}>
-                    <TouchableOpacity><Image source={require('../Images/profile_user.jpg')} style={styling.profilepic} /></TouchableOpacity>
+                    <View style={{ justifyContent: "center", alignItems: "center" }} >
+                        <TouchableOpacity><Image source={require('../Images/profile_user.jpg')} style={styling.profilepic} /></TouchableOpacity>
+                        <Text style={{ backgroundColor: "lightgreen", color: "lightgreen", height: 15, width: 15, position: "absolute", right: 5, bottom: 10, borderRadius: 10, borderColor: "white", borderWidth: 2, }}> </Text>
+
+                    </View>
+
                     <View style={styling.writetext}>
                         <TextInput
                             placeholder="write something here.." />
