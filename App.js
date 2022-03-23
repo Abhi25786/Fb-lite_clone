@@ -25,7 +25,7 @@ const App = () => {
     <>
       {/* this is use for status bar theming */}
       <View>
-        <StatusBar barStyle='dark-content' backgroundColor={"transparent"} />
+        <StatusBar barStyle='dark-content' backgroundColor={"white"} />
       </View>
 
       {/* this is our main screen */}
@@ -35,7 +35,7 @@ const App = () => {
         {/* <Profile /> */}
 
         {/* //Thirdcontainer */}
-        <Component3 />
+        {/* <Component3 /> */}
 
 
       </SafeAreaView>

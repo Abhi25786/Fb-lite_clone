@@ -1,7 +1,10 @@
 import React from 'react'
 import { Text, View, Image, TouchableOpacity, StyleSheet, StatusBar } from 'react-native'
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
+import { NavigationContainer } from '@react-navigation/native'
+import Home from './HomeComponent';
 import styling from '../css/styling'
-
+const Tab = createMaterialTopTabNavigator()
 
 function Component1() {
     return (
@@ -32,74 +35,50 @@ function Component1() {
                     </View>
 
                 </View>
-                <View style={styling.secondline}>
-                    {/* This is home button*/}
 
-                    <TouchableOpacity>
-                        <View style={styling.homemain}>
-                            <Image source={require('../Images/home.png')} style={styling.home} />
-                            <View style={styling.hometextstyling}>
-                                <Text style={styling.hometext}>
-                                    10
-                                </Text>
-                            </View>
-                        </View>
-                    </TouchableOpacity>
-                    {/* This is fried request button*/}
 
-                    <TouchableOpacity>
-                        <View style={styling.homemain}>
-                            <Image source={require('../Images/people.png')} style={styling.home} />
-                            <View style={styling.hometextstyling}>
-                                <Text style={styling.hometext}>
-                                    90
-                                </Text>
-                            </View>
-                        </View>
-                    </TouchableOpacity>
-                    {/* This is message button*/}
-                    <TouchableOpacity>
-                        <View style={styling.homemain}>
-                            <Image source={require('../Images/chat.png')} style={styling.home} />
-                            <View style={styling.hometextstyling}>
-                                <Text style={styling.hometext}>
-                                    50
-                                </Text>
-                            </View>
-                        </View>
-                    </TouchableOpacity>
-                    {/* This is notification button*/}
-                    <TouchableOpacity>
-                        <View style={styling.homemain}>
-                            <Image source={require('../Images/bell.png')} style={styling.home} />
-                            <View style={styling.hometextstyling}>
-                                <Text style={styling.hometext}>
-                                    26
-                                </Text>
-                            </View>
-                        </View>
-                    </TouchableOpacity>
-                    {/* This is Videos  button*/}
-                    <TouchableOpacity>
-                        <View style={styling.homemain}>
-                            <Image source={require('../Images/series.png')} style={styling.home} />
-
-                        </View>
-                    </TouchableOpacity>
-                    {/* This is store button*/}
-                    <TouchableOpacity>
-                        <View style={styling.homemain}>
-                            <Image source={require('../Images/shop.png')} style={styling.home} />
-                            <View style={styling.hometextstyling}>
-                                <Text style={styling.hometext}>
-                                    10
-                                </Text>
-                            </View>
-                        </View>
-                    </TouchableOpacity>
-
-                </View>
             </View >
+            <NavigationContainer>
+                <Tab.Navigator>
+                    <Tab.Screen name=" " component={Home} options={{
+                        tabBarIcon: ({ focused }) => (
+                            <Image source={require('../Images/home.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                        ), tabBarItemStyle: { height: 40, }
+
+                    }} />
+                    <Tab.Screen name="  " component={Home} options={{
+                        tabBarIcon: ({ focused }) => (
+                            <Image source={require('../Images/people.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                        ), tabBarItemStyle: { height: 40, }
+
+                    }} />
+                    <Tab.Screen name="         " component={Home} options={{
+                        tabBarIcon: ({ focused }) => (
+                            <Image source={require('../Images/chat.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                        ), tabBarItemStyle: { height: 40, }
+
+                    }} />
+                    <Tab.Screen name="   " component={Home} options={{
+                        tabBarIcon: ({ focused }) => (
+                            <Image source={require('../Images/bell.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                        ), tabBarItemStyle: { height: 40, }
+
+                    }} />
+                    <Tab.Screen name="    " component={Home} options={{
+                        tabBarIcon: ({ focused }) => (
+                            <Image source={require('../Images/series.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                        ), tabBarItemStyle: { height: 40, }
+
+                    }} />
+                    <Tab.Screen name="     " component={Home} options={{
+                        tabBarIcon: ({ focused }) => (
+                            <Image source={require('../Images/shop.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                        ), tabBarItemStyle: { height: 40, }
+
+                    }} />
+
+                </Tab.Navigator>
+            </NavigationContainer>
         </>
     )
 }

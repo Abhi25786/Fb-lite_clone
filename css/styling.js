@@ -11,6 +11,7 @@ export const styles = StyleSheet.create({
         justifyContent: "space-between",
         justifyContent: "flex-end",
         paddingRight: 10,
+        backgroundColor: "white",
         paddingLeft: 10,
 
 
