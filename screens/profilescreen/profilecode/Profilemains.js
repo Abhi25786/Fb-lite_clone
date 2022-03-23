@@ -21,11 +21,18 @@ function Profile() {
                             <View style={{ marginBottom: 10, justifyContent: "center" }}>
 
                                 <View style={profile.container}>
-                                    <Image source={require('../profileimages/profile_user.jpg')} style={profile.profilebackimg} />
+                                    <View style={{ justifyContent: "center", alignItems: "center" }}>
+                                        <Image source={require('../profileimages/profile_user.jpg')} style={profile.profilebackimg} />
+                                        <Image source={require('../profileimages/photo-camera1.png')} style={{ position: "absolute", height: 35, width: 35, alignItems: "flex-end", right: 50, bottom: 50 }} />
+                                    </View>
 
-                                    <Image source={require('../profileimages/profile_user.jpg')} style={profile.profileimg} />
-                                    <Image source={require('../profileimages/photo-camera1.png')} style={{ position: "absolute", height: 35, width: 35, alignItems: "flex-end", right: 0, bottom: 120 }} />
-                                    <Image source={require('../profileimages/photo-camera1.png')} style={{ position: "absolute", height: 35, width: 35, alignItems: "flex-end", bottom: 50, right: 100, borderColor: "white", borderWidth: 3, borderRadius: 20 }} />
+                                    <View style={{ justifyContent: "center", alignItems: "center" }}>
+                                        <Image source={require('../profileimages/profile_user.jpg')} style={profile.profileimg} />
+                                        <Image source={require('../profileimages/photo-camera1.png')} style={{ position: "absolute", height: 35, width: 35, borderColor: "white", borderWidth: 3, borderRadius: 20, left: 50, top: 10 }} />
+                                    </View>
+
+
+
                                 </View>
 
 
