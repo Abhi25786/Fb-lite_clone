@@ -28,12 +28,14 @@ function Component1({ navigation }) {
                         </View>
                         {/* this is user profile */}
                         <View style={styling.searchlogo}>
-                            <TouchableOpacity onPress={() => navigation.navigate('Profile')}><Image source={require('../Images/profile.png')} style={styling.profile} /></TouchableOpacity>
+                            <TouchableOpacity onPress={() => navigation.navigate('Abhi Thakur')}><Image source={require('../Images/profile.png')} style={styling.profile} /></TouchableOpacity>
                         </View>
                         {/* this is use profile menu */}
-                        <View style={styling.searchlogo}>
-                            <TouchableOpacity><Image source={require('../Images/menu.png')} style={styling.logo} /></TouchableOpacity>
-                        </View>
+                        <TouchableOpacity onPress={() => navigation.navigate('Menu')}>
+                            <View style={styling.searchlogo}>
+                                <Image source={require('../Images/menu.png')} style={styling.logo} />
+                            </View>
+                        </TouchableOpacity>
                     </View>
 
                 </View>

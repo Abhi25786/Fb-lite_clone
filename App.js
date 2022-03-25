@@ -18,6 +18,7 @@ import Component3 from './components/HomeComponent';
 import Profile from './screens/profilescreen/profilecode/Profilemains';
 import Stacknavigation from './Stacknavigation';
 import { NavigationContainer } from '@react-navigation/native';
+import MenuScreen from './screens/menu/MenuScreen';
 
 
 const App = () => {
@@ -29,21 +30,12 @@ const App = () => {
       <View>
         <StatusBar barStyle='dark-content' backgroundColor={"white"} />
       </View>
-
-      {/* this is our main screen */}
-
-      {/* header part  */}
-      {/* <Headcomponent /> */}
-      {/* <Profile /> */}
-
-      {/* //Thirdcontainer */}
-      {/* <Component3 /> */}
-
-
-
+      {/* -----------------------------------Navigation Container-------------------------------------------*/}
       <NavigationContainer >
         <Stacknavigation />
       </NavigationContainer>
+
+
 
     </>
   );

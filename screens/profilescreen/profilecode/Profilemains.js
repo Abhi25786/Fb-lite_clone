@@ -6,7 +6,7 @@ import profile from '../profilecss/profilecss'
 import Profileflatlist from './Profileflatlist'
 import Postlist from '../../../components/Postlist'
 import Statussaction from '../../../components/Statussaction'
-import Headpart from '../profilecomponents/Headpart'
+
 import Profilestatus from '../profilecomponents/Profilestatus'
 import { NavigationContainer } from '@react-navigation/native'
 
@@ -15,10 +15,7 @@ function Profile({ navigation }) {
     return (
         <>
             <SafeAreaView style={profile.maincontainer}>
-                {/* status bar */}
-                <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <Headpart />
-                </TouchableOpacity>
+
                 <View style={{ borderTopColor: "lightgray", borderTopWidth: 1 }}>
                     <ScrollView styles={{ marginBottom: 100 }}>
                         <View style={{ margin: 10 }}>
