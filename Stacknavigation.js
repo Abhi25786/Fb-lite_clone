@@ -4,6 +4,8 @@ import Headcomponent from './components/Headcomponent'
 import { createStackNavigator } from '@react-navigation/stack'
 import Profile from './screens/profilescreen/profilecode/Profilemains'
 import MenuScreen from './screens/menu/MenuScreen'
+import Search from './screens/search/Search'
+
 
 
 const Stack = createStackNavigator();
@@ -15,6 +17,7 @@ function Stacknavigation() {
             <Stack.Screen name="Home" component={Headcomponent} />
             <Stack.Screen name="Abhi Thakur" component={Profile} options={{ headerShown: true }} />
             <Stack.Screen name="Menu" component={MenuScreen} options={{ headerShown: true }} />
+            <Stack.Screen name="Search" component={Search} />
         </Stack.Navigator>
     )
 }

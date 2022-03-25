@@ -23,9 +23,11 @@ function Component1({ navigation }) {
 
                     <View style={[styling.logoflex, { flex: 0.6, padding: 5 }]}>
                         {/* this is search icon */}
-                        <View style={styling.searchlogo}>
-                            <TouchableOpacity><Image source={require('../Images/search.png')} style={styling.logo} /></TouchableOpacity>
-                        </View>
+                        <TouchableOpacity onPress={() => navigation.navigate('Search')}>
+                            <View style={styling.searchlogo}>
+                                <Image source={require('../Images/search.png')} style={styling.logo} />
+                            </View>
+                        </TouchableOpacity>
                         {/* this is user profile */}
                         <View style={styling.searchlogo}>
                             <TouchableOpacity onPress={() => navigation.navigate('Abhi Thakur')}><Image source={require('../Images/profile.png')} style={styling.profile} /></TouchableOpacity>

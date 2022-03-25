@@ -19,6 +19,8 @@ import Profile from './screens/profilescreen/profilecode/Profilemains';
 import Stacknavigation from './Stacknavigation';
 import { NavigationContainer } from '@react-navigation/native';
 import MenuScreen from './screens/menu/MenuScreen';
+import Search from './screens/search/Search';
+
 
 
 const App = () => {
@@ -34,7 +36,6 @@ const App = () => {
       <NavigationContainer >
         <Stacknavigation />
       </NavigationContainer>
-
 
 
     </>

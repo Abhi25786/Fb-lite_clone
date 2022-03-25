@@ -29,14 +29,19 @@ function MenuScreen() {
                 data={DATA}
                 renderItem={(element) => {
                     return (
-                        <TouchableOpacity><View style={{ margin: 10, flexDirection: "row" }}>
-                            <View style={{ justifyContent: "center", alignItems: "center" }}>
-                                <Image source={element.item.uri} style={{ height: 35, width: 35, justifyContent: "center" }} />
-                            </View>
+                        <>
 
-                            <Text style={{ margin: 8, paddingHorizontal: 10, color: "black" }}>{element.item.name}</Text>
 
-                        </View></TouchableOpacity>
+                            <TouchableOpacity><View style={{ margin: 10, flexDirection: "row" }}>
+                                <View style={{ justifyContent: "center", alignItems: "center" }}>
+                                    <Image source={element.item.uri} style={{ height: 35, width: 35, justifyContent: "center" }} />
+                                </View>
+
+                                <Text style={{ margin: 8, paddingHorizontal: 10, color: "black" }}>{element.item.name}</Text>
+
+                            </View></TouchableOpacity>
+                        </>
+
                     )
                 }}
             />
