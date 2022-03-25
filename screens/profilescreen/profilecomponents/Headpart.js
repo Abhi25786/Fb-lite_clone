@@ -1,12 +1,12 @@
 import React from 'react'
-import { View, Image, Text } from 'react-native'
+import { View, Image, Text, TouchableOpacity } from 'react-native'
 import profile from '../profilecss/profilecss'
 
 function Headpart() {
     return (
         <>
             <View style={profile.Headpart}>
-                <Image source={require('../profileimages/left-arrow.png')} style={profile.smaillicons} />
+                <TouchableOpacity><Image source={require('../profileimages/left-arrow.png')} style={profile.smaillicons} /></TouchableOpacity>
                 <Text style={profile.smailliconstext}>Abhi Thakur</Text>
             </View>
         </>

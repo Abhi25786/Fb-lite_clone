@@ -8,7 +8,7 @@ import Friendrequest from '../screens/friendriquest/Friendrequest';
 
 const Tab = createMaterialTopTabNavigator()
 
-function Component1() {
+function Component1({ navigation }) {
     return (
 
         <>
@@ -28,7 +28,7 @@ function Component1() {
                         </View>
                         {/* this is user profile */}
                         <View style={styling.searchlogo}>
-                            <TouchableOpacity><Image source={require('../Images/profile.png')} style={styling.profile} /></TouchableOpacity>
+                            <TouchableOpacity onPress={() => navigation.navigate('Profile')}><Image source={require('../Images/profile.png')} style={styling.profile} /></TouchableOpacity>
                         </View>
                         {/* this is use profile menu */}
                         <View style={styling.searchlogo}>
@@ -40,47 +40,47 @@ function Component1() {
 
 
             </View >
-            <NavigationContainer >
-                <Tab.Navigator screenOptions={{ tabBarShowLabel: false }} tabBarPosition={'top'}>
-                    <Tab.Screen name="1" component={Home} options={{
-                        tabBarIcon: ({ focused }) => (
-                            <Image source={require('../Images/home.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
-                        ), tabBarItemStyle: { height: 40, }
 
-                    }} />
-                    <Tab.Screen name="2" component={Friendrequest} options={{
-                        tabBarIcon: ({ focused }) => (
-                            <Image source={require('../Images/people.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
-                        ), tabBarItemStyle: { height: 40, }
+            <Tab.Navigator screenOptions={{ tabBarShowLabel: false }} tabBarPosition={'top'}>
+                <Tab.Screen name="1" component={Home} options={{
+                    tabBarIcon: ({ focused }) => (
+                        <Image source={require('../Images/home.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                    ), tabBarItemStyle: { height: 40, }
 
-                    }} />
-                    <Tab.Screen name="3" component={Home} options={{
-                        tabBarIcon: ({ focused }) => (
-                            <Image source={require('../Images/chat.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
-                        ), tabBarItemStyle: { height: 40, }
+                }} />
+                <Tab.Screen name="2" component={Friendrequest} options={{
+                    tabBarIcon: ({ focused }) => (
+                        <Image source={require('../Images/people.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                    ), tabBarItemStyle: { height: 40, }
 
-                    }} />
-                    <Tab.Screen name="4" component={Home} options={{
-                        tabBarIcon: ({ focused }) => (
-                            <Image source={require('../Images/bell.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
-                        ), tabBarItemStyle: { height: 40, }
+                }} />
+                <Tab.Screen name="3" component={Home} options={{
+                    tabBarIcon: ({ focused }) => (
+                        <Image source={require('../Images/chat.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                    ), tabBarItemStyle: { height: 40, }
 
-                    }} />
-                    <Tab.Screen name="5" component={Home} options={{
-                        tabBarIcon: ({ focused }) => (
-                            <Image source={require('../Images/series.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
-                        ), tabBarItemStyle: { height: 40, }
+                }} />
+                <Tab.Screen name="4" component={Home} options={{
+                    tabBarIcon: ({ focused }) => (
+                        <Image source={require('../Images/bell.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                    ), tabBarItemStyle: { height: 40, }
 
-                    }} />
-                    <Tab.Screen name="6" component={Home} options={{
-                        tabBarIcon: ({ focused }) => (
-                            <Image source={require('../Images/shop.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
-                        ), tabBarItemStyle: { height: 40, }
+                }} />
+                <Tab.Screen name="5" component={Home} options={{
+                    tabBarIcon: ({ focused }) => (
+                        <Image source={require('../Images/series.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                    ), tabBarItemStyle: { height: 40, }
 
-                    }} />
+                }} />
+                <Tab.Screen name="6" component={Home} options={{
+                    tabBarIcon: ({ focused }) => (
+                        <Image source={require('../Images/shop.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                    ), tabBarItemStyle: { height: 40, }
 
-                </Tab.Navigator>
-            </NavigationContainer>
+                }} />
+
+            </Tab.Navigator>
+
         </>
     )
 }

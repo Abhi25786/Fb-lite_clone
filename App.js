@@ -16,6 +16,8 @@ import Headcomponent from './components/Headcomponent'
 
 import Component3 from './components/HomeComponent';
 import Profile from './screens/profilescreen/profilecode/Profilemains';
+import Stacknavigation from './Stacknavigation';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 const App = () => {
@@ -29,16 +31,20 @@ const App = () => {
       </View>
 
       {/* this is our main screen */}
-      <SafeAreaView style={styling.maincontainer}>
-        {/* header part  */}
-        <Headcomponent />
-        {/* <Profile /> */}
 
-        {/* //Thirdcontainer */}
-        {/* <Component3 /> */}
+      {/* header part  */}
+      {/* <Headcomponent /> */}
+      {/* <Profile /> */}
+
+      {/* //Thirdcontainer */}
+      {/* <Component3 /> */}
 
 
-      </SafeAreaView>
+
+      <NavigationContainer >
+        <Stacknavigation />
+      </NavigationContainer>
+
     </>
   );
 };
