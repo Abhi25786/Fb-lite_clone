@@ -3,6 +3,7 @@ export const menustyle = StyleSheet.create({
     //--------------------------Main Container --------------------------//
     maincontainer: {
         flex: 1
+        , backgroundColor: "white"
     },
     //--------------------------Head part css --------------------------//
     headtextcss: {

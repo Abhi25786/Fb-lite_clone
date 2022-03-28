@@ -6,15 +6,32 @@ import styling from '../../css/styling'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import menustyle from './menucss'
 
-function MenuScreen() {
+function MenuScreen({ navigation }) {
     return (
         <SafeAreaView style={menustyle.maincontainer}>
+            <View style={{ flex: 1, flexDirection: "row", justifyContent: "space-between" }}>
+                <TouchableOpacity>
+                    <View style={{ flex: 0.7, position: "absolute", left: 60, top: 15 }}>
+                        <Text style={{ fontSize: 20, color: "black" }}>Menu</Text>
+                    </View>
+
+                </TouchableOpacity>
+                <View style={{ position: "absolute", top: 10, end: 10 }}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Search')}>
+                        <View style={styling.searchlogo}>
+                            <Image source={require('../../Images/search.png')} style={styling.logo} />
+                        </View>
+                    </TouchableOpacity>
+                </View>
+            </View>
 
 
-            <View style={{ flexDirection: "row" }}>
+            <Divider style={{ marginTop: 50 }} />
+
+            <TouchableOpacity onPress={() => navigation.navigate('Abhi Thakur')} accessibilityIgnoresInvertColors={"black"}><View style={{ flexDirection: "row" }}>
                 <View >
                     <View style={{ justifyContent: "flex-end" }} >
-                        <TouchableOpacity><Image source={require('../../Images/profile_user.jpg')} style={styling.profilepic} /></TouchableOpacity>
+                        <Image source={require('../../Images/profile_user.jpg')} style={styling.profilepic} />
                     </View>
                 </View>
                 <View >
@@ -22,6 +39,9 @@ function MenuScreen() {
                     <Text>View your profile</Text>
                 </View>
             </View>
+            </TouchableOpacity>
+
+
             <Divider />
             <FlatList
 
