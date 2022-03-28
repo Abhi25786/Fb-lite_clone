@@ -16,7 +16,7 @@ function Stacknavigation() {
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="Home" component={Headcomponent} />
             <Stack.Screen name="Abhi Thakur" component={Profile} options={{ headerShown: true }} />
-            <Stack.Screen name="Menu" component={MenuScreen} options={{ headerShown: true }} />
+            <Stack.Screen name="Menu" component={MenuScreen} options={{ headerShown: true, }} />
             <Stack.Screen name="Search" component={Search} />
         </Stack.Navigator>
     )
