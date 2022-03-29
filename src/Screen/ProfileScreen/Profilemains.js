@@ -19,19 +19,19 @@ function Profile({ navigation }) {
 
                 <View style={{ borderTopColor: "lightgray", borderTopWidth: 1 }}>
                     <ScrollView>
-                        <View style={{ margin: 10 }}>
+                        <View style={profile.viewcontainer}>
                             {/*--------------------------------------------Profile Container--------------------------------------- */}
                             <View style={{ marginBottom: 10, justifyContent: "center" }}>
 
                                 <View style={profile.container}>
                                     <View style={{ justifyContent: "center", alignItems: "center" }}>
                                         <Image source={require('../../assets/Images/profile_user.jpg')} style={profile.profilebackimg} />
-                                        <Image source={require('../../assets/Images/photo-camera1.png')} style={{ position: "absolute", height: 35, width: 35, alignItems: "flex-end", right: 50, bottom: 50 }} />
+                                        <Image source={require('../../assets/Images/photo-camera1.png')} style={profile.imgicon} />
                                     </View>
 
                                     <View style={{ justifyContent: "center", alignItems: "center" }}>
                                         <Image source={require('../../assets/Images/profile_user.jpg')} style={profile.profileimg} />
-                                        <Image source={require('../../assets/Images/photo-camera1.png')} style={{ position: "absolute", height: 35, width: 35, borderColor: "white", borderWidth: 3, borderRadius: 20, left: 50, top: 10 }} />
+                                        <Image source={require('../../assets/Images/photo-camera1.png')} style={profile.img} />
                                     </View>
 
 
@@ -50,14 +50,14 @@ function Profile({ navigation }) {
                                 <TouchableOpacity >
                                     <View style={profile.adddbtn}>
                                         <Image source={require('../../assets/Images/add.png')} style={profile.iconscss} />
-                                        <Text style={{ color: "black" }}>Add to story</Text>
+                                        <Text style={profile.addtext}>Add to story</Text>
                                     </View>
                                 </TouchableOpacity>
                                 <View style={profile.editbtn}>
                                     <Image source={require('../../assets/Images/pen.png')} style={profile.iconscss} />
-                                    <Text style={{ color: "black" }}>Edit profile</Text>
+                                    <Text style={profile.addtext}>Edit profile</Text>
                                 </View>
-                                <View style={{ justifyContent: "center", backgroundColor: "lightgray", alignItems: "center", borderRadius: 10, paddingLeft: 10 }}>
+                                <View style={profile.menubtn}>
                                     <Image source={require('../../assets/Images/menublack.png')} style={profile.iconscss} />
                                 </View>
                             </View>
@@ -97,7 +97,7 @@ function Profile({ navigation }) {
                                             return (
                                                 <TouchableOpacity><View style={{ alignItems: "center", }} >
                                                     <Image source={element.item.uri} style={profile.imagecard} />
-                                                    <Text style={{ fontWeight: "bold", color: "black" }}> {element.item.name}</Text>
+                                                    <Text style={profile.smailliconstext}> {element.item.name}</Text>
                                                 </View></TouchableOpacity>
                                             )
                                         }}
@@ -110,7 +110,7 @@ function Profile({ navigation }) {
                         {/*--------------------------------------------See Photos Container--------------------------------------- */}
                         <Divider width={4} />
                         <View style={profile.Headpart}>
-                            <View style={{ flexDirection: "row", backgroundColor: "lightgray", borderRadius: 20, marginTop: 10, padding: 5, alignItems: "center" }}>
+                            <View style={profile.photoicon}>
                                 <Image source={require('../../assets/Images/uplode.png')} style={profile.smaillicons} />
                                 <Text style={profile.smailliconstext}>Photos</Text>
                             </View>

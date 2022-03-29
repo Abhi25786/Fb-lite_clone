@@ -6,6 +6,48 @@ export const styles = StyleSheet.create({
         flex: 1,
         paddingBottom: 20
     },
+    viewcontainer: {
+        margin: 10
+    }
+    ,
+    addtext: {
+        color: "black"
+    },
+    menubtn: {
+        justifyContent: "center",
+        backgroundColor: "lightgray",
+        alignItems: "center",
+        borderRadius: 10,
+        paddingLeft: 10
+    },
+
+    img: {
+        position: "absolute",
+        height: 35,
+        width: 35,
+        borderColor: "white",
+        borderWidth: 2,
+        borderRadius: 20,
+        left: 50,
+        top: 10
+    },
+    imgicon: {
+        position: "absolute",
+        height: 35,
+        width: 35,
+        alignItems: "flex-end",
+        right: 50,
+        bottom: 50
+    },
+    photoicon: {
+        flexDirection: "row",
+        backgroundColor: "lightgray",
+        borderRadius: 25,
+        marginTop: 5,
+        padding: 5,
+        alignItems: "center",
+        paddingBottom: 10
+    },
     //Status Bar css
     Headpart: {
         flexDirection: "row",
