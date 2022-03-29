@@ -14,7 +14,7 @@ import {
 import styling from './css/styling';
 import Headcomponent from './src/components/Headcomponent'
 
-import Component3 from './src/Screen/HomeScreen/Homescreen';
+import Component3 from './src/Screen/homeScreen/Homescreen';
 
 import Stacknavigation from './src/navigation/Stacknavigation';
 import { NavigationContainer } from '@react-navigation/native';

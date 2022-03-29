@@ -2,7 +2,7 @@ import React from 'react'
 import { Text, View, TouchableOpacity, Image, TextInput } from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import styles from '../../css/styling'
-import profile from '../Screen/ProfileScreen/profilecss'
+import profile from '../Screen/profileScreen/profilecss'
 
 function Profilestatus() {
     return (
