@@ -1,7 +1,7 @@
 import React from 'react'
 import { SafeAreaView, Text, View, Image, ScrollView, FlatList, Button, TouchableOpacity, TextInput } from 'react-native'
 import styling from '../search/searchcss'
-import styles from '../../../css/styling'
+import styles from '../../css/styling'
 function Search({ navigation }) {
     return (
 

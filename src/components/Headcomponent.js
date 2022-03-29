@@ -3,7 +3,7 @@ import { Text, View, Image, TouchableOpacity, StyleSheet, StatusBar } from 'reac
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import { NavigationContainer } from '@react-navigation/native'
 import Home from '../Screen/homeScreen/Homescreen';
-import styling from '../../css/styling'
+import styling from '../css/styling'
 import Friendrequest from '../Screen/friendriquest/Friendrequest';
 
 const Tab = createMaterialTopTabNavigator()
@@ -54,7 +54,7 @@ function Component1({ navigation }) {
                 }} />
                 <Tab.Screen name="2" component={Friendrequest} options={{
                     tabBarIcon: ({ focused }) => (
-                        <Image source={require('../assets/Images/people.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
+                        <Image source={require('../assets/Images/friends.png')} style={{ height: 20, width: 20, marginTop: 5, tintColor: focused ? '#1e90ff' : 'grey' }} />
                     ), tabBarItemStyle: { height: 40, },
 
                 }} />

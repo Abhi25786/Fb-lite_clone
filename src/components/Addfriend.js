@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, FlatList, Text, Image, StyleSheet, TouchableOpacity, Button } from 'react-native'
-import styles from '../../css/suggestlist'
-import styling from '../../css/styling'
+import styles from '../css/suggestlist'
+import styling from '../css/styling'
 import DATA from './flatlist'
 
 
