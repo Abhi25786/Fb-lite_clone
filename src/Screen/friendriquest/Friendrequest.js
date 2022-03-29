@@ -11,7 +11,7 @@ function Friendrequest() {
                 <Divider width={1} />
 
                 <ScrollView>
-                    <Text style={{ fontWeight: 'bold', marginHorizontal: 10, fontSize: 20, color: "black" }}>Friends</Text>
+                    <Text style={styles.friendtext}>Friends</Text>
                     <View style={styling.mainline}>
                         <View style={styling.imagebtn} >
                             <Text style={styles.btntext}>Suggestions</Text>
@@ -20,15 +20,15 @@ function Friendrequest() {
                             <Text style={styles.btntext}>Your Friend</Text>
                         </View>
                     </View>
-                    <View style={{ flexDirection: "row", justifyContent: "space-between", marginHorizontal: 10 }}>
+                    <View style={styles.suggestview}>
 
                         <Text style={styles.btntext}>Suggestions</Text>
 
 
-                        <Text style={{ color: "#1e90ff", marginTop: 5 }}>See all</Text>
+                        <Text style={styles.seeall}>See all</Text>
 
                     </View>
-                    <Divider width={1} style={{ marginTop: 5 }} />
+                    <Divider width={1} />
                     <View style={styling.flat}>
                         <FlatList
 
@@ -37,18 +37,22 @@ function Friendrequest() {
                             renderItem={(element) => {
                                 return (
 
-                                    <View style={{ flexDirection: 'row', marginHorizontal: 10, marginVertical: 10 }}>
-                                        <View style={{ flex: 0.2, justifyContent: "center", alignItems: "center" }}>
-                                            <Image source={element.item.uri} style={{ height: 70, width: 70, borderRadius: 50 }} />
+                                    <View style={styles.flatview}>
+                                        <View style={styles.imageview}>
+                                            <Image source={element.item.uri} style={styles.image} />
                                         </View>
                                         <View style={{ flex: 0.8 }}>
-                                            <Text style={{ color: "black", fontWeight: "bold" }}>{element.item.name}</Text>
-                                            <View style={{ flexDirection: 'row', justifyContent: "space-between", marginTop: 25 }}>
-                                                <View style={{ justifyContent: "center", paddingTop: 5, paddingBottom: 5, flexDirection: "row", borderRadius: 5, backgroundColor: "#1e90ff", flex: 0.5, marginRight: 10 }}>
-                                                    <TouchableOpacity><Text style={{ color: "white" }}>Confirm</Text></TouchableOpacity>
+                                            <Text style={styles.btntext}>{element.item.name}</Text>
+                                            <View style={styles.addview}>
+                                                <View style={styles.addbtn}>
+                                                    <TouchableOpacity>
+                                                        <Text style={{ color: "white" }}>Confirm</Text>
+                                                    </TouchableOpacity>
                                                 </View>
-                                                <View style={{ justifyContent: "center", paddingTop: 5, paddingBottom: 5, flexDirection: "row", borderRadius: 5, backgroundColor: "lightgray", flex: 0.5, marginLeft: 10 }}>
-                                                    <TouchableOpacity><Text style={{ color: "black" }}>Delete</Text></TouchableOpacity>
+                                                <View style={styles.deletebtn}>
+                                                    <TouchableOpacity>
+                                                        <Text style={{ color: "black" }}>Delete</Text>
+                                                    </TouchableOpacity>
                                                 </View>
                                             </View>
 
@@ -56,13 +60,11 @@ function Friendrequest() {
 
 
                                     </View>
-                                    // <Image source={element.item.uri} />
-
                                 )
                             }}
                         />
-                        <TouchableOpacity><View style={{ justifyContent: "center", paddingTop: 5, paddingBottom: 5, flexDirection: "row", borderRadius: 5, backgroundColor: "lightgray", marginHorizontal: 10 }}>
-                            <Text style={{ color: "black" }}>See All</Text>
+                        <TouchableOpacity><View style={styles.suggestbtn}>
+                            <Text style={styles.btntext}>See All</Text>
                         </View></TouchableOpacity>
                     </View>
                     <Divider />
@@ -73,17 +75,17 @@ function Friendrequest() {
                         renderItem={(element) => {
                             return (
 
-                                <View style={{ flexDirection: 'row', marginHorizontal: 10, marginVertical: 10 }}>
-                                    <View style={{ flex: 0.2, justifyContent: "center", alignItems: "center" }}>
-                                        <Image source={element.item.uri} style={{ height: 70, width: 70, borderRadius: 50 }} />
+                                <View style={styles.flatview}>
+                                    <View style={styles.imageview}>
+                                        <Image source={element.item.uri} style={styles.image} />
                                     </View>
                                     <View style={{ flex: 0.8 }}>
-                                        <Text style={{ color: "black", fontWeight: "bold" }}>{element.item.name}</Text>
-                                        <View style={{ flexDirection: 'row', justifyContent: "space-between", marginTop: 25 }}>
-                                            <View style={{ justifyContent: "center", paddingTop: 5, paddingBottom: 5, flexDirection: "row", borderRadius: 5, backgroundColor: "#1e90ff", flex: 0.5, marginRight: 10 }}>
+                                        <Text style={styles.btntext}>{element.item.name}</Text>
+                                        <View style={styles.addview}>
+                                            <View style={styles.addbtn}>
                                                 <Text style={{ color: "white" }}>Add Friend</Text>
                                             </View>
-                                            <View style={{ justifyContent: "center", paddingTop: 5, paddingBottom: 5, flexDirection: "row", borderRadius: 5, backgroundColor: "lightgray", flex: 0.5, marginLeft: 10 }}>
+                                            <View style={styles.deletebtn}>
                                                 <Text style={{ color: "black" }}>Delete</Text>
                                             </View>
                                         </View>
