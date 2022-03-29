@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Profile from '../Screen/ProfileScreen/Profilemains'
 import MenuScreen from '../Screen/menu/MenuScreen'
 import Search from '../Screen/search/Search'
+import LoginPage from '../Screen/loginPage/LogingPage'
 
 
 
@@ -18,6 +19,7 @@ function Stacknavigation() {
             <Stack.Screen name="Abhi Thakur" component={Profile} options={{ headerShown: true }} />
             <Stack.Screen name="Menu" component={MenuScreen} options={{ headerShown: true, headerTitle: "", headerTransparent: true, headerBackButtonMenuEnables: false }} />
             <Stack.Screen name="Search" component={Search} />
+            <Stack.Screen name='Login' component={LoginPage} />
         </Stack.Navigator>
     )
 }

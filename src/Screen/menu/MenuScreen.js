@@ -1,5 +1,5 @@
 import React from 'react'
-import { SafeAreaView, Text, View, Image, ScrollView, FlatList, Button, TouchableOpacity, TextInput } from 'react-native'
+import { SafeAreaView, Text, View, Image, ScrollView, FlatList, Button, TouchableOpacity, TextInput, TouchableHighlight } from 'react-native'
 
 import DATA from '../../components/menuflatlisht'
 import styling from '../../css/styling'
@@ -54,14 +54,16 @@ function MenuScreen({ navigation }) {
                         <>
 
 
-                            <TouchableOpacity><View style={{ margin: 10, flexDirection: "row" }}>
-                                <View style={{ justifyContent: "center", alignItems: "center" }}>
-                                    <Image source={element.item.uri} style={{ height: 35, width: 35, justifyContent: "center" }} />
+                            <TouchableOpacity onPress={element.item.name === "Log out" ? () => navigation.navigate('Login') : null}>
+                                <View style={{ margin: 10, flexDirection: "row" }}>
+                                    <View style={{ justifyContent: "center", alignItems: "center" }}>
+                                        <Image source={element.item.uri} style={{ height: 35, width: 35, justifyContent: "center" }} />
+                                    </View>
+
+                                    <Text style={{ margin: 8, paddingHorizontal: 10, color: "black" }}>{element.item.name}</Text>
+
                                 </View>
-
-                                <Text style={{ margin: 8, paddingHorizontal: 10, color: "black" }}>{element.item.name}</Text>
-
-                            </View></TouchableOpacity>
+                            </TouchableOpacity>
                         </>
 
                     )

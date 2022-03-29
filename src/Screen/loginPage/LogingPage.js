@@ -5,7 +5,7 @@ import Divider2 from 'react-native-divider'
 
 import logincss from './logincss'
 
-function LogingPage() {
+function LogingPage({ navigation }) {
     return (
         <SafeAreaView style={logincss.maincontainer}>
             <ScrollView>
@@ -24,7 +24,7 @@ function LogingPage() {
                     <TextInput style={{ borderColor: "blue", }}></TextInput>
                 </View>
                 <View style={{ marginVertical: 10 }}>
-                    <Button title='Login' ></Button>
+                    <Button title='Login' onPress={() => navigation.navigate('Home')} ></Button>
                 </View>
                 <Text style={logincss.forgettext}>Forgot password?</Text>
                 <Divider2 orientation="center">
