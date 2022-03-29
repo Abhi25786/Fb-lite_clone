@@ -14,11 +14,13 @@ import { NavigationContainer } from '@react-navigation/native'
 function Profile({ navigation }) {
     return (
         <>
+            {/* -------------------------------------------Main Container------------------------------------------ */}
             <SafeAreaView style={profile.maincontainer}>
 
                 <View style={{ borderTopColor: "lightgray", borderTopWidth: 1 }}>
                     <ScrollView>
                         <View style={{ margin: 10 }}>
+                            {/*--------------------------------------------Profile Container--------------------------------------- */}
                             <View style={{ marginBottom: 10, justifyContent: "center" }}>
 
                                 <View style={profile.container}>
@@ -37,11 +39,13 @@ function Profile({ navigation }) {
                                 </View>
 
 
-
+                                {/*-----------------------------------------------User Name --------------------------------------------- */}
                                 <View style={{ alignItems: 'center' }}><Text style={profile.smailliconstext}>
                                     Abhi Thakur (Abhi)
-                                </Text></View>
+                                </Text>
+                                </View>
                             </View>
+                            {/*--------------------------------------------Buttons Container--------------------------------------- */}
                             <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
                                 <TouchableOpacity >
                                     <View style={profile.adddbtn}>
@@ -57,45 +61,53 @@ function Profile({ navigation }) {
                                     <Image source={require('../../assets/Images/menublack.png')} style={profile.iconscss} />
                                 </View>
                             </View>
-                            <View style={profile.Headpart}>
-                                <Image source={require('../../assets/Images/heart.png')} style={profile.smaillicons} />
-                                <Text style={profile.smailliconstext}>Single</Text>
-                            </View>
-                            <View style={profile.Headpart}>
-                                <Image source={require('../../assets/Images/wifi.png')} style={profile.smaillicons} />
-                                <Text style={profile.smailliconstext}>Followed by 100 person</Text>
-                            </View>
-                            <View style={profile.Headpart}>
-                                <Image source={require('../../assets/Images/heart.png')} style={profile.smaillicons} />
-                                <Text style={profile.smailliconstext}>See more about yourself</Text>
-                            </View>
-                            <View style={{ flex: 1, flexDirection: "row", justifyContent: "space-between" }}>
-                                <View style={{ flex: 0.9, flexDirection: "column" }}>
-                                    <Text style={{ fontWeight: "bold", color: "black" }}>Friends</Text>
-                                    <Text>985 friends</Text>
+                            {/*--------------------------------------------About Profile Container--------------------------------------- */}
+                            <View>
+                                <View style={profile.Headpart}>
+                                    <Image source={require('../../assets/Images/heart.png')} style={profile.smaillicons} />
+                                    <Text style={profile.smailliconstext}>Single</Text>
                                 </View>
-                                <View style={{ flex: 1, alignItems: "flex-end", }}>
-                                    <Text style={{ color: "blue" }}>See All</Text>
+                                <View style={profile.Headpart}>
+                                    <Image source={require('../../assets/Images/wifi.png')} style={profile.smaillicons} />
+                                    <Text style={profile.smailliconstext}>Followed by 100 person</Text>
+                                </View>
+                                <View style={profile.Headpart}>
+                                    <Image source={require('../../assets/Images/heart.png')} style={profile.smaillicons} />
+                                    <Text style={profile.smailliconstext}>See more about yourself</Text>
                                 </View>
                             </View>
-                            <View style={{ alignItems: "center", justifyContent: "space-between" }}>
-                                <FlatList
-                                    showsHorizontalScrollIndicator={false}
-                                    data={Profileflatlist}
-                                    renderItem={(element) => {
-                                        return (
-                                            <TouchableOpacity><View style={{ alignItems: "center", }} >
-                                                <Image source={element.item.uri} style={profile.imagecard} />
-                                                <Text style={{ fontWeight: "bold", color: "black" }}> {element.item.name}</Text>
-                                            </View></TouchableOpacity>
-                                        )
-                                    }}
-                                    numColumns={3}
-                                />
+                            {/*--------------------------------------------About Friend Container--------------------------------------- */}
+                            <View>
 
+
+                                <View style={{ flex: 1, flexDirection: "row", justifyContent: "space-between" }}>
+                                    <View style={{ flex: 0.9, flexDirection: "column" }}>
+                                        <Text style={{ fontWeight: "bold", color: "black" }}>Friends</Text>
+                                        <Text>985 friends</Text>
+                                    </View>
+                                    <View style={{ flex: 1, alignItems: "flex-end", }}>
+                                        <Text style={{ color: "blue" }}>See All</Text>
+                                    </View>
+                                </View>
+                                <View style={{ alignItems: "center", justifyContent: "space-between" }}>
+                                    <FlatList
+                                        showsHorizontalScrollIndicator={false}
+                                        data={Profileflatlist}
+                                        renderItem={(element) => {
+                                            return (
+                                                <TouchableOpacity><View style={{ alignItems: "center", }} >
+                                                    <Image source={element.item.uri} style={profile.imagecard} />
+                                                    <Text style={{ fontWeight: "bold", color: "black" }}> {element.item.name}</Text>
+                                                </View></TouchableOpacity>
+                                            )
+                                        }}
+                                        numColumns={3}
+                                    />
+                                </View>
                             </View>
 
                         </View>
+                        {/*--------------------------------------------See Photos Container--------------------------------------- */}
                         <Divider width={4} />
                         <View style={profile.Headpart}>
                             <View style={{ flexDirection: "row", backgroundColor: "lightgray", borderRadius: 20, marginTop: 10, padding: 5, alignItems: "center" }}>
@@ -103,11 +115,12 @@ function Profile({ navigation }) {
                                 <Text style={profile.smailliconstext}>Photos</Text>
                             </View>
                         </View>
+                        {/*-------------------------------------------- Uplode Post Container--------------------------------------- */}
                         <Divider width={4} />
 
                         <Profilestatus />
 
-                        {/* this is post list */}
+                        {/*--------------------------------------------Post list  Container--------------------------------------- */}
                         <Postlist />
                     </ScrollView>
 
