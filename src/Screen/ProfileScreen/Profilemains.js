@@ -17,7 +17,7 @@ function Profile({ navigation }) {
             <SafeAreaView style={profile.maincontainer}>
 
                 <View style={{ borderTopColor: "lightgray", borderTopWidth: 1 }}>
-                    <ScrollView styles={{ marginBottom: 100 }}>
+                    <ScrollView>
                         <View style={{ margin: 10 }}>
                             <View style={{ marginBottom: 10, justifyContent: "center" }}>
 
@@ -42,7 +42,7 @@ function Profile({ navigation }) {
                                     Abhi Thakur (Abhi)
                                 </Text></View>
                             </View>
-                            <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
+                            <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
                                 <TouchableOpacity >
                                     <View style={profile.adddbtn}>
                                         <Image source={require('../../assets/Images/add.png')} style={profile.iconscss} />
@@ -78,7 +78,7 @@ function Profile({ navigation }) {
                                     <Text style={{ color: "blue" }}>See All</Text>
                                 </View>
                             </View>
-                            <View style={{ alignItems: "center" }}>
+                            <View style={{ alignItems: "center", justifyContent: "space-between" }}>
                                 <FlatList
                                     showsHorizontalScrollIndicator={false}
                                     data={Profileflatlist}
