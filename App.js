@@ -14,12 +14,12 @@ import {
 import styling from './css/styling';
 import Headcomponent from './src/components/Headcomponent'
 
-import Component3 from './src/Screen/HomeScreen/HomeComponent';
+import Component3 from './src/Screen/HomeScreen/Homescreen';
 
 import Stacknavigation from './src/navigation/Stacknavigation';
 import { NavigationContainer } from '@react-navigation/native';
-import MenuScreen from './screens/menu/MenuScreen';
-import Search from './screens/search/Search';
+import MenuScreen from './src/Screen/menu/MenuScreen';
+
 
 
 
