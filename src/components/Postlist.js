@@ -1,8 +1,8 @@
 import React from 'react'
 import { ScrollView, View, TouchableOpacity, Image, FlatList, TextInput, Text, Button, VirtualizedList, D } from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
-import styling from '../css/styling'
-import DATA from '../components/flatlist'
+import styling from '../../css/styling'
+import DATA from './flatlist'
 function Postlist() {
     return (
         <>
@@ -27,7 +27,7 @@ function Postlist() {
                                             <Text style={{ color: "black", fontWeight: 'bold' }}>{element.item.name}</Text>
                                         </View>
                                         <View style={{ alignItems: "flex-end" }}>
-                                            <TouchableOpacity><Image source={require('../Images/menuarrow.png')} style={styling.logo} /></TouchableOpacity>
+                                            <TouchableOpacity><Image source={require('../assets/Images/menuarrow.png')} style={styling.logo} /></TouchableOpacity>
                                         </View>
                                     </View>
                                     <View style={{ alignItems: "center", resizeMode: 'contain', }}>
@@ -35,14 +35,14 @@ function Postlist() {
                                     </View>
                                     <View style={styling.mainline} >
                                         <View style={styling.imagebtn} >
-                                            <Image style={styling.imagelogo} source={require('../Images/like.png')} />
+                                            <Image style={styling.imagelogo} source={require('../assets/Images/like.png')} />
                                         </View>
 
                                         <View style={styling.imagebtn} >
-                                            <Image style={styling.imagelogo} source={require('../Images/comment.png')} />
+                                            <Image style={styling.imagelogo} source={require('../assets/Images/comment.png')} />
                                         </View>
                                         <View style={styling.imagebtn} >
-                                            <Image style={styling.imagelogo} source={require('../Images/turn-right-arrow.png')} />
+                                            <Image style={styling.imagelogo} source={require('../assets/Images/turn-right-arrow.png')} />
                                         </View>
                                     </View>
                                 </View>

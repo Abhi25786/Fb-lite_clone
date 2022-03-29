@@ -1,10 +1,10 @@
 import React from 'react'
 import { Text, View, Image, TouchableOpacity, StyleSheet, StatusBar } from 'react-native'
-import Headcomponent from './components/Headcomponent'
+import Headcomponent from '../components/Headcomponent'
 import { createStackNavigator } from '@react-navigation/stack'
-import Profile from './screens/profilescreen/profilecode/Profilemains'
-import MenuScreen from './screens/menu/MenuScreen'
-import Search from './screens/search/Search'
+import Profile from '../Screen/ProfileScreen/Profilemains'
+import MenuScreen from '../../screens/menu/MenuScreen'
+import Search from '../../screens/search/Search'
 
 
 

@@ -9,7 +9,7 @@ function Search({ navigation }) {
             <View style={{ flexDirection: "row", marginHorizontal: 10, marginVertical: 5 }}>
                 <TouchableOpacity style={{ justifyContent: "center", alignItems: "center", flex: 0.1 }} onPress={() => navigation.navigate('Home')}>
                     <View >
-                        <Image source={require('../../Images/left-arrow.png')} style={styling.home} />
+                        <Image source={require('../../src/assets/Images/left-arrow.png')} style={styling.home} />
                     </View>
                 </TouchableOpacity>
 
@@ -17,7 +17,7 @@ function Search({ navigation }) {
                     <TextInput placeholder="Search..." style={{ paddingHorizontal: 10, color: "black", }} />
                 </View>
                 <View style={{ justifyContent: "center", alignItems: "center", flex: 0.1 }}>
-                    <TouchableOpacity><Image source={require('../../Images/search.png')} style={styling.home} /></TouchableOpacity>
+                    <TouchableOpacity><Image source={require('../../src/assets/Images/search.png')} style={styling.home} /></TouchableOpacity>
 
                 </View>
             </View>

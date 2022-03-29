@@ -12,11 +12,11 @@ import {
 
 } from 'react-native';
 import styling from './css/styling';
-import Headcomponent from './components/Headcomponent'
+import Headcomponent from './src/components/Headcomponent'
 
-import Component3 from './components/HomeComponent';
-import Profile from './screens/profilescreen/profilecode/Profilemains';
-import Stacknavigation from './Stacknavigation';
+import Component3 from './src/Screen/HomeScreen/HomeComponent';
+
+import Stacknavigation from './src/navigation/Stacknavigation';
 import { NavigationContainer } from '@react-navigation/native';
 import MenuScreen from './screens/menu/MenuScreen';
 import Search from './screens/search/Search';

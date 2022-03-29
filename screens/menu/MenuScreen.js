@@ -19,7 +19,7 @@ function MenuScreen({ navigation }) {
                 <View style={{ position: "absolute", top: 10, end: 10 }}>
                     <TouchableOpacity onPress={() => navigation.navigate('Search')}>
                         <View style={styling.searchlogo}>
-                            <Image source={require('../../Images/search.png')} style={styling.logo} />
+                            <Image source={require('../../src/assets/Images/search.png')} style={styling.logo} />
                         </View>
                     </TouchableOpacity>
                 </View>
@@ -31,7 +31,7 @@ function MenuScreen({ navigation }) {
             <TouchableOpacity onPress={() => navigation.navigate('Abhi Thakur')} accessibilityIgnoresInvertColors={"black"}><View style={{ flexDirection: "row" }}>
                 <View >
                     <View style={{ justifyContent: "flex-end" }} >
-                        <Image source={require('../../Images/profile_user.jpg')} style={styling.profilepic} />
+                        <Image source={require('../../src/assets/Images/profile_user.jpg')} style={styling.profilepic} />
                     </View>
                 </View>
                 <View >

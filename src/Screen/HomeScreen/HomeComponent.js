@@ -1,10 +1,10 @@
 import React from 'react'
 import { ScrollView, View, TouchableOpacity, Image, FlatList, TextInput, Text, Button } from 'react-native'
-import DATA from './flatlist'
-import styling from '../css/styling'
-import Suggestlist from './Addfriend'
-import Statussaction from './Statussaction'
-import Postlist from './Postlist'
+import DATA from '../../components/flatlist'
+import styling from '../../../css/styling'
+import Suggestlist from '../../components/Addfriend'
+import Statussaction from '../../components/Statussaction'
+import Postlist from '../../components/Postlist'
 
 function Component3() {
     return (
@@ -15,17 +15,17 @@ function Component3() {
 
                 {/* Show your feeling Button */}
                 <View style={styling.emojis}>
-                    <Image source={require('../Images/feeling.png')} style={styling.emojiimage} />
+                    <Image source={require('../../assets/Images/feeling.png')} style={styling.emojiimage} />
                     <Text style={styling.emoji}>Feeling</Text>
                 </View>
                 {/* Live Video button */}
                 <View style={styling.emojis}>
-                    <Image source={require('../Images/live.png')} style={styling.emojiimage} />
+                    <Image source={require('../../assets/Images/live.png')} style={styling.emojiimage} />
                     <Text style={styling.emoji}>Live Video</Text>
                 </View>
                 {/* show your location Button */}
                 <View style={styling.emojis}>
-                    <Image source={require('../Images/location.png')} style={styling.emojiimage} />
+                    <Image source={require('../../assets/Images/location.png')} style={styling.emojiimage} />
                     <Text style={styling.emoji}>Location</Text>
                 </View>
 
