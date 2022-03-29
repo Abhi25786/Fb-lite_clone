@@ -6,8 +6,13 @@ export const styles = StyleSheet.create({
         flex: 1,
         paddingBottom: 20
     },
+    mainview: {
+        borderTopColor: "lightgray",
+        borderTopWidth: 1
+    },
     viewcontainer: {
-        margin: 10
+        margin: 5,
+        justifyContent: "center"
     }
     ,
     addtext: {

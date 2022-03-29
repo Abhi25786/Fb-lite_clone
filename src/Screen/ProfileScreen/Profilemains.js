@@ -17,11 +17,11 @@ function Profile({ navigation }) {
             {/* -------------------------------------------Main Container------------------------------------------ */}
             <SafeAreaView style={profile.maincontainer}>
 
-                <View style={{ borderTopColor: "lightgray", borderTopWidth: 1 }}>
+                <View style={profile.mainview}>
                     <ScrollView>
                         <View style={profile.viewcontainer}>
                             {/*--------------------------------------------Profile Container--------------------------------------- */}
-                            <View style={{ marginBottom: 10, justifyContent: "center" }}>
+                            <View style={profile.viewcontainer}>
 
                                 <View style={profile.container}>
                                     <View style={{ justifyContent: "center", alignItems: "center" }}>
