@@ -14,7 +14,6 @@ import {
 import styling from './src/css/styling';
 import Headcomponent from './src/components/Headcomponent'
 
-import Component3 from './src/Screen/homeScreen/Homescreen';
 
 import Stacknavigation from './src/navigation/Stacknavigation';
 import { NavigationContainer } from '@react-navigation/native';
@@ -35,10 +34,10 @@ const App = () => {
         <StatusBar barStyle='dark-content' backgroundColor={"white"} />
       </View>
       {/* -----------------------------------Navigation Container-------------------------------------------*/}
-      {/* <NavigationContainer >
+      <NavigationContainer >
         <Stacknavigation />
-      </NavigationContainer> */}
-      <LogingPage />
+      </NavigationContainer>
+      {/* <LogingPage /> */}
       {/* <Signuppage /> */}
     </>
   );

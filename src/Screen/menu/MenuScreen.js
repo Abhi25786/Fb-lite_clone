@@ -43,6 +43,8 @@ function MenuScreen({ navigation }) {
 
 
             <Divider />
+
+
             <FlatList
 
                 showsHorizontalScrollIndicator={false}

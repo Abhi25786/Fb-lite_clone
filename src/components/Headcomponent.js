@@ -2,7 +2,7 @@ import React from 'react'
 import { Text, View, Image, TouchableOpacity, StyleSheet, StatusBar } from 'react-native'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import { NavigationContainer } from '@react-navigation/native'
-import Home from '../Screen/homeScreen/Homescreen';
+import Home from '../Screen/HomeScreen/Homescreen';
 import styling from '../css/styling'
 import Friendrequest from '../Screen/friendriquest/Friendrequest';
 
