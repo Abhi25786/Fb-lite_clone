@@ -3,7 +3,7 @@ import { Text, View, TouchableOpacity, Image, TextInput } from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import styles from '../styles/styling'
 import profile from '../Screen/ProfileScreen/profilecss'
-import { images } from '../Pics'
+import { images } from '../assets/Pics'
 
 
 function Profilestatus() {

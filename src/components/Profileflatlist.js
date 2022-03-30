@@ -1,4 +1,4 @@
-import { images } from '../Pics'
+import { images } from '../assets/Pics'
 export default DATA = [
 
     {

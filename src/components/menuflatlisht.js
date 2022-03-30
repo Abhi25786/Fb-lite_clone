@@ -1,122 +1,124 @@
+import { images } from '../assets/Pics'
+
 export default DATA = [
     {
         key: "1",
-        uri: require('../assets/Images/coronavirus.png'),
+        uri: images.Covid,
         name: "COVID- 19 Information Center",
 
     },
     {
         key: "2",
-        uri: require('../assets/Images/live.png'),
+        uri: images.Live,
         name: "Live videos",
 
     },
 
     {
         key: "3",
-        uri: require('../assets/Images/messenger.png'),
+        uri: images.Messanger,
         name: "Messages",
 
     },
     {
         key: "4",
-        uri: require('../assets/Images/people.png'),
+        uri: images.Group,
         name: "Group",
 
     },
     {
         key: "5",
-        uri: require('../assets/Images/friends.png'),
+        uri: images.Friends,
         name: "Friends",
 
     },
     {
         key: "6",
-        uri: require('../assets/Images/tv.png'),
+        uri: images.Tv,
         name: "Videos",
 
     },
     {
         key: "7",
-        uri: require('../assets/Images/store.png'),
+        uri: images.Shop,
         name: "Marketplace",
 
     },
     {
         key: "8",
-        uri: require('../assets/Images/red-flag.png'),
+        uri: images.Flag,
         name: "Pages",
 
     },
     {
         key: "9",
-        uri: require('../assets/Images/save.png'),
+        uri: images.Saved,
         name: "Saved",
 
     },
     {
         key: "10",
-        uri: require('../assets/Images/wifi.png'),
+        uri: images.Wifi,
         name: "Find Wi-Fi",
 
     },
     {
         key: "11",
-        uri: require('../assets/Images/clock.png'),
+        uri: images.CLock,
         name: "Memories",
 
     },
     {
         key: "12",
-        uri: require('../assets/Images/game.png'),
+        uri: images.Game,
         name: "Games",
 
     },
     {
         key: "13",
-        uri: require('../assets/Images/blood.png'),
+        uri: images.Blood,
         name: "Blood Donations",
 
     },
     {
         key: "14",
-        uri: require('../assets/Images/gear.png'),
+        uri: images.Setting,
         name: "Settings",
 
     },
     {
         key: "15",
-        uri: require('../assets/Images/dark.png'),
+        uri: images.Darkmode,
         name: "Dark Mode",
 
     },
     {
         key: "16",
-        uri: require('../assets/Images/language.png'),
+        uri: images.Language,
         name: "Language",
 
     },
     {
         key: "17",
-        uri: require('../assets/Images/book.png'),
+        uri: images.Book,
         name: "About",
 
     },
     {
         key: "18",
-        uri: require('../assets/Images/caution.png'),
+        uri: images.Caution,
         name: "Report a problem",
 
     },
     {
         key: "19",
-        uri: require('../assets/Images/shield.png'),
+        uri: images.Shield,
         name: "Safety",
 
     },
     {
         key: "20",
-        uri: require('../assets/Images/logout.png'),
+        uri: images.Logout,
         name: "Log out",
 
     },

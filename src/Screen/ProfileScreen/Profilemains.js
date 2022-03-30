@@ -9,7 +9,7 @@ import Statussaction from '../../components/Statussaction'
 
 import Profilestatus from '../../components/Profilestatus'
 import { NavigationContainer } from '@react-navigation/native'
-import { images } from '../../Pics'
+import { images } from '../../assets/Pics'
 
 
 

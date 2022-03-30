@@ -20,7 +20,7 @@ function Stacknavigation() {
             <Stack.Navigator screenOptions={{ headerShown: false, }}>
                 <Stack.Screen name='Login' component={LoginPage} />
                 <Stack.Screen name="Home" component={Headcomponent} />
-                <Stack.Screen name="Menu" component={MenuScreen} options={{ headerShown: true, headerTitle: "", headerTransparent: true, headerBackButtonMenuEnables: false, gestureEnabled: true, gestureDirection: 'vertical-inverted' }} />
+                <Stack.Screen name="Menu" component={MenuScreen} options={{ headerShown: true, headerTitle: "", headerTransparent: true, headerBackButtonMenuEnables: false, gestureEnabled: true, gestureDirection: 'horizontal' }} />
                 <Stack.Screen name="Abhi Thakur" component={Profile} options={{ headerShown: true }} />
 
                 <Stack.Screen name="Search" component={Search} />

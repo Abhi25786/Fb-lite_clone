@@ -5,6 +5,8 @@ import styling from '../../styles/styling'
 import Suggestlist from '../../components/Addfriend'
 import Statussaction from '../../components/Statussaction'
 import Postlist from '../../components/Postlist'
+import { images } from '../../assets/Pics'
+
 
 function Component3() {
     return (
@@ -13,24 +15,24 @@ function Component3() {
             <Statussaction />
             <View style={styling.border} >
 
-                {/* Show your feeling Button */}
+                {/*-------------------------Show your feeling Button-----------------------------------*/}
                 <View style={styling.emojis}>
-                    <Image source={require('../../assets/Images/feeling.png')} style={styling.emojiimage} />
+                    <Image source={images.Smile} style={styling.emojiimage} />
                     <Text style={styling.emoji}>Feeling</Text>
                 </View>
-                {/* Live Video button */}
+                {/*--------------------------Live Video button-------------------------------------------*/}
                 <View style={styling.emojis}>
-                    <Image source={require('../../assets/Images/live.png')} style={styling.emojiimage} />
+                    <Image source={images.Live} style={styling.emojiimage} />
                     <Text style={styling.emoji}>Live Video</Text>
                 </View>
-                {/* show your location Button */}
+                {/*-------------------------show your location Button------------------------------------ */}
                 <View style={styling.emojis}>
-                    <Image source={require('../../assets/Images/location.png')} style={styling.emojiimage} />
+                    <Image source={images.Location} style={styling.emojiimage} />
                     <Text style={styling.emoji}>Location</Text>
                 </View>
 
             </View>
-            {/* This is the stories view section */}
+            {/*--------------------------This is the stories view container----------------------------------- */}
             <View style={styling.flat}>
                 <FlatList
                     horizontal={true}
@@ -52,8 +54,9 @@ function Component3() {
             {/* //post component */}
 
 
-            {/* <Postlist /> */}
+            {/* ------------------------------------------Suggest Container-------------------------------------*/}
             <Suggestlist />
+            {/* -------------------------------------------Post Container-------------------------------------- */}
             <Postlist />
 
 

@@ -5,6 +5,8 @@ import DATA from '../../components/menuflatlisht'
 import styling from '../../styles/styling'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import menustyle from './menucss'
+import { images } from '../../assets/Pics'
+
 
 
 
@@ -21,7 +23,7 @@ function MenuScreen({ navigation }) {
                 <View style={{ position: "absolute", top: 10, end: 10 }}>
                     <TouchableOpacity onPress={() => navigation.navigate('Search')}>
                         <View style={styling.searchlogo}>
-                            <Image source={require('../../assets/Images/search.png')} style={styling.logo} />
+                            <Image source={images.search} style={styling.logo} />
                         </View>
                     </TouchableOpacity>
                 </View>
@@ -33,7 +35,7 @@ function MenuScreen({ navigation }) {
             <TouchableOpacity onPress={() => navigation.navigate('Abhi Thakur')} accessibilityIgnoresInvertColors={"black"}><View style={{ flexDirection: "row" }}>
                 <View >
                     <View style={{ justifyContent: "flex-end" }} >
-                        <Image source={require('../../assets/Images/profile_user.jpg')} style={styling.profilepic} />
+                        <Image source={images.Profile} style={styling.profilepic} />
                     </View>
                 </View>
                 <View >
