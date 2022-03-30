@@ -9,6 +9,8 @@ import Statussaction from '../../components/Statussaction'
 
 import Profilestatus from '../../components/Profilestatus'
 import { NavigationContainer } from '@react-navigation/native'
+import { images } from '../../Pics'
+
 
 
 function Profile({ navigation }) {
@@ -25,13 +27,13 @@ function Profile({ navigation }) {
 
                                 <View style={profile.container}>
                                     <View style={{ justifyContent: "center", alignItems: "center" }}>
-                                        <Image source={require('../../assets/Images/profile_user.jpg')} style={profile.profilebackimg} />
-                                        <Image source={require('../../assets/Images/photo-camera1.png')} style={profile.imgicon} />
+                                        <Image source={images.Profile} style={profile.profilebackimg} />
+                                        <Image source={images.Circlecamera} style={profile.imgicon} />
                                     </View>
 
                                     <View style={{ justifyContent: "center", alignItems: "center" }}>
-                                        <Image source={require('../../assets/Images/profile_user.jpg')} style={profile.profileimg} />
-                                        <Image source={require('../../assets/Images/photo-camera1.png')} style={profile.img} />
+                                        <Image source={images.Profile} style={profile.profileimg} />
+                                        <Image source={images.Circlecamera} style={profile.img} />
                                     </View>
 
 
@@ -49,30 +51,30 @@ function Profile({ navigation }) {
                             <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
                                 <TouchableOpacity >
                                     <View style={profile.adddbtn}>
-                                        <Image source={require('../../assets/Images/add.png')} style={profile.iconscss} />
+                                        <Image source={images.Circleadd} style={profile.iconscss} />
                                         <Text style={profile.addtext}>Add to story</Text>
                                     </View>
                                 </TouchableOpacity>
                                 <View style={profile.editbtn}>
-                                    <Image source={require('../../assets/Images/pen.png')} style={profile.iconscss} />
+                                    <Image source={images.pen} style={profile.iconscss} />
                                     <Text style={profile.addtext}>Edit profile</Text>
                                 </View>
                                 <View style={profile.menubtn}>
-                                    <Image source={require('../../assets/Images/menublack.png')} style={profile.iconscss} />
+                                    <Image source={images.blackmenudots} style={profile.iconscss} />
                                 </View>
                             </View>
                             {/*--------------------------------------------About Profile Container--------------------------------------- */}
                             <View>
                                 <View style={profile.Headpart}>
-                                    <Image source={require('../../assets/Images/heart.png')} style={profile.smaillicons} />
+                                    <Image source={images.Heart} style={profile.smaillicons} />
                                     <Text style={profile.smailliconstext}>Single</Text>
                                 </View>
                                 <View style={profile.Headpart}>
-                                    <Image source={require('../../assets/Images/wifi.png')} style={profile.smaillicons} />
+                                    <Image source={images.Wifi} style={profile.smaillicons} />
                                     <Text style={profile.smailliconstext}>Followed by 100 person</Text>
                                 </View>
                                 <View style={profile.Headpart}>
-                                    <Image source={require('../../assets/Images/heart.png')} style={profile.smaillicons} />
+                                    <Image source={images.Book} style={profile.smaillicons} />
                                     <Text style={profile.smailliconstext}>See more about yourself</Text>
                                 </View>
                             </View>
@@ -111,7 +113,7 @@ function Profile({ navigation }) {
                         <Divider width={4} />
                         <View style={profile.Headpart}>
                             <View style={profile.photoicon}>
-                                <Image source={require('../../assets/Images/uplode.png')} style={profile.smaillicons} />
+                                <Image source={images.Uplodeicon} style={profile.smaillicons} />
                                 <Text style={profile.smailliconstext}>Photos</Text>
                             </View>
                         </View>

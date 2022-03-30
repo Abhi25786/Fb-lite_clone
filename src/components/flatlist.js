@@ -1,49 +1,47 @@
+import { images } from "../Pics"
+
+images
 export default DATA = [
   {
     key: "1",
-    uri: require('../assets/Images/image1.jpg'),
+    uri: images.User1,
     name: "Abhi Thakur",
 
   },
   {
     key: "2",
-    uri: require('../assets/Images/image2.jpg'),
+    uri: images.User2,
     name: "Ritika",
   },
   {
     key: "3",
-    uri: require('../assets/Images/image3.jpg'),
+    uri: images.User3,
     name: "Suraj Thakur",
   },
   {
     key: "4",
-    uri: require('../assets/Images/image4.jpg'),
+    uri: images.User4,
     name: "Divyanshu",
   },
   {
     key: "5",
-    uri: require('../assets/Images/image5.jpg'),
+    uri: images.User5,
     name: "Anshul Modi",
   },
   {
     key: "6",
-    uri: require('../assets/Images/image6.jpg'),
+    uri: images.User6,
     name: "Abhi Thakur",
   },
   {
     key: "7",
-    uri: require('../assets/Images/image1.jpg'),
+    uri: images.User7,
     name: "Abhi Thakur",
 
   },
   {
     key: "8",
-    uri: require('../assets/Images/image2.jpg'),
-    name: "Abhi Thakur",
-  },
-  {
-    key: "9",
-    uri: require('../assets/Images/image3.jpg'),
+    uri: images.User8,
     name: "Abhi Thakur",
   },
 
