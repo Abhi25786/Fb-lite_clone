@@ -11,7 +11,6 @@ import { images } from '../../assets/Pics'
 
 
 function MenuScreen({ navigation }) {
-
     const click = (title) => {
         console.log(title.key)
         if (title.key === "20") {
@@ -51,27 +50,32 @@ function MenuScreen({ navigation }) {
 
     return (
         //---------------------------------------------Menu Container-----------------------------------------------//
+
+
         <SafeAreaView style={menustyle.maincontainer}>
-            <View style={{ flex: 1, flexDirection: "row", justifyContent: "space-between" }}>
+
+
+            {/* ----------------------------------------HEAD PART------------------------------------------------ */}
+            <View style={menustyle.menuhead}>
                 <TouchableOpacity>
-                    <View style={{ flex: 0.7, position: "absolute", left: 60, top: 15 }}>
-                        <Text style={{ fontSize: 20, color: "black" }}>Menu</Text>
+                    <View style={menustyle.menuview}>
+                        <Text style={menustyle.menutext}>Menu</Text>
                     </View>
 
                 </TouchableOpacity>
-                <View style={{ position: "absolute", top: 10, end: 10 }}>
-                    <TouchableOpacity onPress={() => navigation.navigate('Search')}>
-                        <View style={styling.searchlogo}>
-                            <Image source={images.search} style={styling.logo} />
-                        </View>
-                    </TouchableOpacity>
-                </View>
+
+                <TouchableOpacity onPress={() => navigation.navigate('Search')} style={menustyle.menusearch}>
+                    <View style={styling.searchlogo}>
+                        <Image source={images.search} style={styling.logo} />
+                    </View>
+                </TouchableOpacity>
+
             </View>
 
 
             <Divider style={{ marginTop: 50 }} />
-
-            <TouchableOpacity onPress={() => navigation.navigate('Abhi Thakur')} accessibilityIgnoresInvertColors={"black"}><View style={{ flexDirection: "row" }}>
+            {/* -------------------------------------------Pofile click Container-------------------------------- */}
+            <TouchableOpacity onPress={() => navigation.navigate('Abhi Thakur')} accessibilityIgnoresInvertColors={"black"}><View style={menustyle.profilehead}>
                 <View >
                     <View style={{ justifyContent: "flex-end" }} >
                         <Image source={images.Profile} style={styling.profilepic} />
@@ -87,7 +91,7 @@ function MenuScreen({ navigation }) {
 
             <Divider />
 
-
+            {/* --------------------------------------Menu List COntainer--------------------------------------- */}
             <FlatList
 
                 showsHorizontalScrollIndicator={false}
@@ -98,12 +102,10 @@ function MenuScreen({ navigation }) {
 
 
                             <TouchableOpacity onPress={() => click(element.item)}>
-                                <View style={{ margin: 10, flexDirection: "row" }}>
-                                    <View style={{ justifyContent: "center", alignItems: "center" }}>
-                                        <Image source={element.item.uri} style={{ height: 35, width: 35, justifyContent: "center" }} />
-                                    </View>
+                                <View style={menustyle.menulistview}>
 
-                                    <Text style={{ margin: 8, paddingHorizontal: 10, color: "black" }}>{element.item.name}</Text>
+                                    <Image source={element.item.uri} style={menustyle.listimg} />
+                                    <Text style={menustyle.listtext}>{element.item.name}</Text>
 
                                 </View>
                             </TouchableOpacity>

@@ -49,6 +49,7 @@ export const images = {
     Caution: require('./Images/caution.png'),
     Shield: require('./Images/shield.png'),
     Logout: require('./Images/logout.png'),
+    leftarrow: require('./Images/left-arrow.png')
 
 
 
