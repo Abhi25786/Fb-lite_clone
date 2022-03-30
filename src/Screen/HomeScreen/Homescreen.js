@@ -1,7 +1,7 @@
 import React from 'react'
 import { ScrollView, View, TouchableOpacity, Image, FlatList, TextInput, Text, Button } from 'react-native'
 import DATA from '../../components/flatlist'
-import styling from '../../css/styling'
+import styling from '../../styles/styling'
 import Suggestlist from '../../components/Addfriend'
 import Statussaction from '../../components/Statussaction'
 import Postlist from '../../components/Postlist'

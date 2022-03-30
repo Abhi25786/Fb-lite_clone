@@ -2,7 +2,7 @@ import React from 'react'
 import { SafeAreaView, Text, View, Image, ScrollView, FlatList, Button, TouchableOpacity, TextInput, TouchableHighlight } from 'react-native'
 
 import DATA from '../../components/menuflatlisht'
-import styling from '../../css/styling'
+import styling from '../../styles/styling'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import menustyle from './menucss'
 

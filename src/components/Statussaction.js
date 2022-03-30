@@ -1,6 +1,6 @@
 import React from 'react'
 import { ScrollView, View, TouchableOpacity, Image, FlatList, TextInput, Text, Button } from 'react-native'
-import styling from '../css/styling'
+import styling from '../styles/styling'
 function Statussaction() {
     return (
         <>

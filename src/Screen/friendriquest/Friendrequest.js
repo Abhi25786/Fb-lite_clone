@@ -2,7 +2,7 @@ import React from 'react'
 import { SafeAreaView, Text, View, Image, ScrollView, FlatList, Button, TouchableOpacity, TextInput } from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import styles from '../friendriquest/friendcss'
-import styling from '../../css/styling'
+import styling from '../../styles/styling'
 import DATA from '../../components/flatlist'
 function Friendrequest() {
     return (

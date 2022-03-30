@@ -1,7 +1,7 @@
 import React from 'react'
 import { ScrollView, View, TouchableOpacity, Image, FlatList, TextInput, Text, Button, VirtualizedList, D } from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
-import styling from '../css/styling'
+import styling from '../styles/styling'
 import DATA from './flatlist'
 function Postlist() {
     return (
