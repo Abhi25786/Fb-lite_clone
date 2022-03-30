@@ -6,6 +6,8 @@ import styling from '../../styles/styling'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import menustyle from './menucss'
 
+
+
 function MenuScreen({ navigation }) {
     return (
         <SafeAreaView style={menustyle.maincontainer}>

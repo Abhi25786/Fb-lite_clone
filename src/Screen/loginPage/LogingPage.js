@@ -31,9 +31,11 @@ function LogingPage({ navigation }) {
                     or
                 </Divider2>
                 <View style={{ alignItems: "center" }}>
-                    <View style={{ alignItems: "center", backgroundColor: "#228b22", justifyContent: "center", width: 150 }}>
-                        <Text style={{ color: "white", paddingVertical: 8 }}>Create new account</Text>
-                    </View>
+                    <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
+                        <View style={{ alignItems: "center", backgroundColor: "#228b22", justifyContent: "center", width: 150 }}>
+                            <Text style={{ color: "white", paddingVertical: 8 }}>Create new account</Text>
+                        </View>
+                    </TouchableOpacity>
                 </View>
                 <Text style={logincss.text}>English (US)</Text>
                 <Text style={logincss.forgettext}>हिन्दी</Text>

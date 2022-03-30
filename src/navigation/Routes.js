@@ -7,6 +7,7 @@ import MenuScreen from '../Screen/menu/MenuScreen'
 import Search from '../Screen/search/Search'
 import LoginPage from '../Screen/loginPage/LogingPage'
 import { NavigationContainer } from '@react-navigation/native'
+import Signuppage from '../Screen/signup/Signuppage'
 
 
 
@@ -16,12 +17,16 @@ function Stacknavigation() {
     return (
         //---------------------------Routes Screens-------------------------------// 
         <NavigationContainer>
-            <Stack.Navigator screenOptions={{ headerShown: false }}>
-                <Stack.Screen name="Home" component={Headcomponent} />
-                <Stack.Screen name="Abhi Thakur" component={Profile} options={{ headerShown: true }} />
-                <Stack.Screen name="Menu" component={MenuScreen} options={{ headerShown: true, headerTitle: "", headerTransparent: true, headerBackButtonMenuEnables: false }} />
-                <Stack.Screen name="Search" component={Search} />
+            <Stack.Navigator screenOptions={{ headerShown: false, }}>
                 <Stack.Screen name='Login' component={LoginPage} />
+                <Stack.Screen name="Home" component={Headcomponent} />
+                <Stack.Screen name="Menu" component={MenuScreen} options={{ headerShown: true, headerTitle: "", headerTransparent: true, headerBackButtonMenuEnables: false, gestureEnabled: true, gestureDirection: 'vertical-inverted' }} />
+                <Stack.Screen name="Abhi Thakur" component={Profile} options={{ headerShown: true }} />
+
+                <Stack.Screen name="Search" component={Search} />
+
+                <Stack.Screen name="Signup" component={Signuppage} />
+
             </Stack.Navigator>
         </NavigationContainer>
 
