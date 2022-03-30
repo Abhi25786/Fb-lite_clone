@@ -23,6 +23,16 @@ const logincss = StyleSheet.create({
         borderColor: "#1e90ff",
         marginHorizontal: 10,
         height: 40,
+    },
+    creataccountbtn: {
+        alignItems: "center",
+        backgroundColor: "#228b22",
+        justifyContent: "center",
+        width: 150
+    },
+    textcolour: {
+        color: "white",
+        paddingVertical: 8
     }
 });
 export default logincss

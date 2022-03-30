@@ -11,7 +11,46 @@ import { images } from '../../assets/Pics'
 
 
 function MenuScreen({ navigation }) {
+
+    const click = (title) => {
+        console.log(title.key)
+        if (title.key === "20") {
+            navigation.navigate('Login')
+        } else if (title.key === "1") {
+            navigation.navigate('Login')
+        }
+        else if (title.key === "2") {
+            navigation.navigate('Login')
+        }
+        else if (title.key === "3") {
+            navigation.navigate('Login')
+        }
+        else if (title.key === "4") {
+            navigation.navigate('Login')
+        }
+        else if (title.key === "5") {
+            navigation.navigate('Login')
+        }
+        else if (title.key === "6") {
+            navigation.navigate('Login')
+        }
+        else if (title.key === "7") {
+            navigation.navigate('Login')
+        }
+        else if (title.key === "8") {
+            navigation.navigate('Login')
+        }
+        else if (title.key === "9") {
+            navigation.navigate('Login')
+        }
+        else if (title.key === "10") {
+            navigation.navigate('Login')
+        }
+
+    }
+
     return (
+        //---------------------------------------------Menu Container-----------------------------------------------//
         <SafeAreaView style={menustyle.maincontainer}>
             <View style={{ flex: 1, flexDirection: "row", justifyContent: "space-between" }}>
                 <TouchableOpacity>
@@ -58,7 +97,7 @@ function MenuScreen({ navigation }) {
                         <>
 
 
-                            <TouchableOpacity onPress={element.item.name === "Log out" ? () => navigation.navigate('Login') : null}>
+                            <TouchableOpacity onPress={() => click(element.item)}>
                                 <View style={{ margin: 10, flexDirection: "row" }}>
                                     <View style={{ justifyContent: "center", alignItems: "center" }}>
                                         <Image source={element.item.uri} style={{ height: 35, width: 35, justifyContent: "center" }} />

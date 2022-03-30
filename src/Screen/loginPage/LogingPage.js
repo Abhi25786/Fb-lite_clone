@@ -7,43 +7,57 @@ import logincss from './logincss'
 
 function LogingPage({ navigation }) {
     return (
+
+        // --------------------------------------------------Login Container---------------------------------------//
         <SafeAreaView style={logincss.maincontainer}>
             <ScrollView>
 
-
+                {/* ------------------------------------------Headpart------------------------------------------- */}
                 <View style={{ alignItems: "center", marginBottom: 5 }}>
                     <Text>Facebook</Text>
                 </View>
                 <Divider />
-                <Text style={logincss.text}>Mobile number or email</Text>
-                <View style={logincss.textinput}>
-                    <TextInput style={{ borderColor: "blue", }}></TextInput>
+
+                {/* -------------------------------------------Text Input Container-------------------------------*/}
+                <View>
+
+                    <Text style={logincss.text}>Mobile number or email</Text>
+                    <View style={logincss.textinput}>
+                        <TextInput ></TextInput>
+                    </View>
+                    <Text style={logincss.text}>Password</Text>
+                    <View style={logincss.textinput}>
+                        <TextInput ></TextInput>
+                    </View>
                 </View>
-                <Text style={logincss.text}>Password</Text>
-                <View style={logincss.textinput}>
-                    <TextInput style={{ borderColor: "blue", }}></TextInput>
+                {/* --------------------------------------------Buttons Container-------------------------------- */}
+                <View>
+                    <View style={{ marginVertical: 10 }}>
+                        <Button title='Login' onPress={() => navigation.navigate('Home')} ></Button>
+                    </View>
+                    <Text style={logincss.forgettext}>Forgot password?</Text>
+                    <Divider2 orientation="center">
+                        or
+                    </Divider2>
+                    <View style={{ alignItems: "center" }}>
+                        <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
+                            <View style={logincss.creataccountbtn}>
+                                <Text style={logincss.textcolour}>Create new account</Text>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
                 </View>
-                <View style={{ marginVertical: 10 }}>
-                    <Button title='Login' onPress={() => navigation.navigate('Home')} ></Button>
+                {/* --------------------------------------------Choose Languages Container------------------------- */}
+                <View>
+                    <Text style={logincss.text}>English (US)</Text>
+                    <Text style={logincss.forgettext}>हिन्दी</Text>
+                    <Text style={logincss.forgettext}>ਪੰਜਾਬੀ</Text>
+                    <Text style={logincss.forgettext}>বাংলা</Text>
+                    <Text style={logincss.forgettext}>ଓଡ଼ିଶା</Text>
+                    <Text style={logincss.forgettext}>मराठी</Text>
+                    <Text style={logincss.forgettext}>More languages...</Text>
                 </View>
-                <Text style={logincss.forgettext}>Forgot password?</Text>
-                <Divider2 orientation="center">
-                    or
-                </Divider2>
-                <View style={{ alignItems: "center" }}>
-                    <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
-                        <View style={{ alignItems: "center", backgroundColor: "#228b22", justifyContent: "center", width: 150 }}>
-                            <Text style={{ color: "white", paddingVertical: 8 }}>Create new account</Text>
-                        </View>
-                    </TouchableOpacity>
-                </View>
-                <Text style={logincss.text}>English (US)</Text>
-                <Text style={logincss.forgettext}>हिन्दी</Text>
-                <Text style={logincss.forgettext}>ਪੰਜਾਬੀ</Text>
-                <Text style={logincss.forgettext}>বাংলা</Text>
-                <Text style={logincss.forgettext}>ଓଡ଼ିଶା</Text>
-                <Text style={logincss.forgettext}>मराठी</Text>
-                <Text style={logincss.forgettext}>More languages...</Text>
+
 
 
             </ScrollView>

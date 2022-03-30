@@ -42,7 +42,8 @@ export const styles = StyleSheet.create({
         borderRadius: 5,
         backgroundColor: "#1e90ff",
         flex: 0.5,
-        marginRight: 10
+        marginRight: 10,
+
     },
     deletebtn: {
         justifyContent: "center",
@@ -77,6 +78,9 @@ export const styles = StyleSheet.create({
         flex: 0.2,
         justifyContent: "center",
         alignItems: "center"
+    },
+    textcolour: {
+        color: "white"
     }
 })
 export default styles

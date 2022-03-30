@@ -7,28 +7,35 @@ import DATA from '../../components/flatlist'
 function Friendrequest() {
     return (
         <>
+            {/* -----------------------------------------------Friend Request Main Container-------------------------------------------- */}
             <View style={styles.Maincontainer}>
                 <Divider width={1} />
 
                 <ScrollView>
-                    <Text style={styles.friendtext}>Friends</Text>
-                    <View style={styling.mainline}>
-                        <View style={styling.imagebtn} >
+                    {/* -----------------------------------------Friend search container--------------------------------------- */}
+                    <View>
+
+
+                        <Text style={styles.friendtext}>Friends</Text>
+                        <View style={styling.mainline}>
+                            <View style={styling.imagebtn} >
+                                <Text style={styles.btntext}>Suggestions</Text>
+                            </View>
+                            <View style={styling.imagebtn} >
+                                <Text style={styles.btntext}>Your Friend</Text>
+                            </View>
+                        </View>
+                        <View style={styles.suggestview}>
+
                             <Text style={styles.btntext}>Suggestions</Text>
+
+
+                            <Text style={styles.seeall}>See all</Text>
+
                         </View>
-                        <View style={styling.imagebtn} >
-                            <Text style={styles.btntext}>Your Friend</Text>
-                        </View>
+                        <Divider width={1} />
                     </View>
-                    <View style={styles.suggestview}>
-
-                        <Text style={styles.btntext}>Suggestions</Text>
-
-
-                        <Text style={styles.seeall}>See all</Text>
-
-                    </View>
-                    <Divider width={1} />
+                    {/* ---------------------------------------Confirm Friend COntainer----------------------------------------- */}
                     <View style={styling.flat}>
                         <FlatList
 
@@ -46,12 +53,12 @@ function Friendrequest() {
                                             <View style={styles.addview}>
                                                 <View style={styles.addbtn}>
                                                     <TouchableOpacity>
-                                                        <Text style={{ color: "white" }}>Confirm</Text>
+                                                        <Text style={styles.textcolour}>Confirm</Text>
                                                     </TouchableOpacity>
                                                 </View>
                                                 <View style={styles.deletebtn}>
                                                     <TouchableOpacity>
-                                                        <Text style={{ color: "black" }}>Delete</Text>
+                                                        <Text >Delete</Text>
                                                     </TouchableOpacity>
                                                 </View>
                                             </View>
@@ -68,6 +75,7 @@ function Friendrequest() {
                         </View></TouchableOpacity>
                     </View>
                     <Divider />
+                    {/* ---------------------------------------------------Add Friend Container------------------------------------ */}
                     <FlatList
 
                         showsHorizontalScrollIndicator={false}
@@ -83,10 +91,10 @@ function Friendrequest() {
                                         <Text style={styles.btntext}>{element.item.name}</Text>
                                         <View style={styles.addview}>
                                             <View style={styles.addbtn}>
-                                                <Text style={{ color: "white" }}>Add Friend</Text>
+                                                <Text style={styles.textcolour}>Add Friend</Text>
                                             </View>
                                             <View style={styles.deletebtn}>
-                                                <Text style={{ color: "black" }}>Delete</Text>
+                                                <Text >Delete</Text>
                                             </View>
                                         </View>
 
@@ -94,7 +102,7 @@ function Friendrequest() {
 
 
                                 </View>
-                                // <Image source={element.item.uri} />
+
 
                             )
                         }}
