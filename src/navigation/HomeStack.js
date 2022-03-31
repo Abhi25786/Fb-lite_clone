@@ -8,14 +8,17 @@ import MenuScreen from '../Screen/menu/MenuScreen'
 import Search from '../Screen/search/Search'
 
 
-
-export default function (Stack) {
+const Stack = createStackNavigator();
+export default function () {
     return (
         <>
-            <Stack.Screen name="Home" component={Headcomponent} />
-            <Stack.Screen name="Menu" component={MenuScreen} options={{ headerShown: true, headerTitle: "", headerTransparent: true, headerBackButtonMenuEnables: false, gestureEnabled: true, gestureDirection: 'horizontal' }} />
-            <Stack.Screen name="Abhi Thakur" component={Profile} options={{ headerShown: true }} />
-            <Stack.Screen name="Search" component={Search} />
+            <Stack.Navigator screenOptions={{ headerShown: false }}>
+                <Stack.Screen name="Home" component={Headcomponent} />
+                <Stack.Screen name="Menu" component={MenuScreen} options={{ headerShown: true, headerTitle: "", headerTransparent: true, headerBackButtonMenuEnables: false, gestureEnabled: true, gestureDirection: 'horizontal' }} />
+                <Stack.Screen name="Abhi Thakur" component={Profile} options={{ headerShown: true }} />
+                <Stack.Screen name="Search" component={Search} />
+            </Stack.Navigator>
+
 
         </>
     );
