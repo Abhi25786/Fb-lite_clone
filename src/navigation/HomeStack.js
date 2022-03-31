@@ -6,7 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Profile from '../Screen/ProfileScreen/Profilemains'
 import MenuScreen from '../Screen/menu/MenuScreen'
 import Search from '../Screen/search/Search'
-import MenuStack from './MenuStack';
+
 
 
 export default function (Stack) {

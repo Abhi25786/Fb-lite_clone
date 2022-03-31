@@ -11,7 +11,7 @@ export default function (Stack) {
     return (
         <>
             <Stack.Screen
-                name={navigationStrings.HOME}
+                name={"Home"}
                 component={HomeStack}
                 options={{ headerShown: false }}
             />
