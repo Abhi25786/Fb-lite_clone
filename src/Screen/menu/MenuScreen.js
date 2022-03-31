@@ -57,6 +57,9 @@ function MenuScreen({ navigation }) {
 
             {/* ----------------------------------------HEAD PART------------------------------------------------ */}
             <View style={menustyle.menuhead}>
+                <View style={menustyle.menuview}>
+                    <Text style={menustyle.menutext}>Menu</Text>
+                </View>
                 <TouchableOpacity>
                     <View style={menustyle.menuview}>
                         <Text style={menustyle.menutext}>Menu</Text>

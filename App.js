@@ -12,7 +12,7 @@ import {
 
 } from 'react-native';
 
-import Headcomponent from './src/components/Headcomponent'
+
 
 
 import Routes from './src/navigation/Routes';
