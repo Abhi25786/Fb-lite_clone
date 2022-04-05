@@ -20,6 +20,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import MenuScreen from './src/Screen/menu/MenuScreen';
 import LogingPage from './src/Screen/loginPage/LogingPage';
 import Signuppage from './src/Screen/signup/Signuppage';
+import Stackdemo from './Stackdemo';
 
 
 
@@ -34,8 +35,8 @@ const App = () => {
         <StatusBar barStyle='dark-content' backgroundColor={"white"} />
       </View>
       {/* -----------------------------------Main Routes-------------------------------------------*/}
-
-      <Routes />
+      <Stackdemo />
+      {/* <Routes /> */}
 
       {/* <LogingPage /> */}
       {/* <Signuppage /> */}
