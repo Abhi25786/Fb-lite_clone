@@ -21,6 +21,8 @@ import MenuScreen from './src/Screen/menu/MenuScreen';
 import LogingPage from './src/Screen/loginPage/LogingPage';
 import Signuppage from './src/Screen/signup/Signuppage';
 import Stackdemo from './Stackdemo';
+import { Provider } from 'react-redux';
+import store from './src/redux/store';
 
 
 
@@ -29,18 +31,21 @@ const App = () => {
 
 
   return (
-    <>
+
+
+    <Provider store={store}>
       {/* ----------------------this is use for status bar theming-------------------------------*/}
       <View>
         <StatusBar barStyle='dark-content' backgroundColor={"white"} />
       </View>
       {/* -----------------------------------Main Routes-------------------------------------------*/}
-      <Stackdemo />
-      {/* <Routes /> */}
+      {/* <Stackdemo /> */}
+      <Routes />
+    </Provider>
 
-      {/* <LogingPage /> */}
-      {/* <Signuppage /> */}
-    </>
+
+
+
   );
 };
 
