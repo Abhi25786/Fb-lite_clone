@@ -7,7 +7,7 @@ import { Divider } from 'react-native-elements/dist/divider/Divider'
 import menustyle from './menucss'
 import { images } from '../../assets/Pics'
 import { useDispatch } from 'react-redux'
-import { logoutContinue } from '../../redux/actions'
+import { logoutContinue } from '../../redux/actions/auth'
 
 
 

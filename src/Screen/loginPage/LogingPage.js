@@ -5,7 +5,8 @@ import Divider2 from 'react-native-divider'
 
 import logincss from './logincss'
 import { useDispatch } from 'react-redux'
-import { loginContinue } from '../../redux/actions'
+import { loginContinue } from '../../redux/actions/auth'
+loginContinue
 
 
 function LogingPage({ navigation }) {
@@ -23,7 +24,6 @@ function LogingPage({ navigation }) {
             setshow(false)
             setlastshow(true)
         } else {
-
             setlastshow(false)
             dispatch(loginContinue())
         }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Continue from './Continue'
+import Continue from './auth'
 
 import { combineReducers } from 'redux'
 
