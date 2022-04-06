@@ -21,7 +21,7 @@ const logincss = StyleSheet.create({
     textinput: {
         borderWidth: 1,
         borderColor: "#1e90ff",
-        marginHorizontal: 10,
+        marginHorizontal: 5,
         height: 40,
     },
     creataccountbtn: {

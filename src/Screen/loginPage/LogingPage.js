@@ -9,10 +9,24 @@ import { loginContinue } from '../../redux/actions'
 
 
 function LogingPage({ navigation }) {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+
+    const [text, setText] = useState('');
+    const [name, lastName] = useState('');
+    const [show, setshow] = useState(false)
+
+    const Click = () => {
+        if (text === '') {
+            setshow(true)
+        } else if (name === '') {
+            setshow(true)
+        } else {
+            dispatch(loginContinue())
+        }
+    }
     return (
 
-        // --------------------------------------------------Login Container---------------------------------------//
+        // ----------- ---------------------------------------Login Container---------------------------------------//
         <SafeAreaView style={logincss.maincontainer}>
             <ScrollView>
 
@@ -27,18 +41,24 @@ function LogingPage({ navigation }) {
 
                     <Text style={logincss.text}>Mobile number or email</Text>
                     <View style={logincss.textinput}>
-                        <TextInput ></TextInput>
+                        <TextInput placeholder='Enter email or number' onChangeText={setText} />
                     </View>
+                    {
+                        show ? <Text>Enter Valid email or Number</Text> : null
+                    }
 
                     <Text style={logincss.text}>Password</Text>
                     <View style={logincss.textinput}>
-                        <TextInput ></TextInput>
+                        <TextInput placeholder='Enter password' onChangeText={lastName} />
                     </View>
+                    {
+                        show ? <Text>Enter Password</Text> : null
+                    }
                 </View>
                 {/* --------------------------------------------Buttons Container-------------------------------- */}
                 <View>
                     <View style={{ marginVertical: 10 }}>
-                        <Button title='Login' onPress={() => dispatch(loginContinue())} ></Button>
+                        <Button title='Login' onPress={Click} ></Button>
                     </View>
                     <Text style={logincss.forgettext}>Forgot password?</Text>
                     <Divider2 orientation="center">

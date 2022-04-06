@@ -6,15 +6,20 @@ import styling from '../../styles/styling'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import menustyle from './menucss'
 import { images } from '../../assets/Pics'
+import { useDispatch } from 'react-redux'
+import { logoutContinue } from '../../redux/actions'
+
 
 
 
 
 function MenuScreen({ navigation }) {
+    const dispatch = useDispatch();
+
     const click = (title) => {
         console.log(title.key)
         if (title.key === "20") {
-            navigation.navigate('Login')
+            dispatch(logoutContinue())
         } else if (title.key === "1") {
             navigation.navigate('Login')
         }

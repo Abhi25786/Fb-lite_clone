@@ -3,3 +3,8 @@ export const loginContinue = () => {
         type: "login"
     }
 }
+export const logoutContinue = () => {
+    return {
+        type: "logout"
+    }
+}
