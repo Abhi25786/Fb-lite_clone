@@ -3,6 +3,8 @@ import { View, FlatList, Text, Image, StyleSheet, TouchableOpacity, Button } fro
 import styles from '../styles/suggestlist'
 import styling from '../styles/styling'
 import DATA from './flatlist'
+import { images } from '../assets/Pics'
+
 
 
 function Suggestlist() {
@@ -23,8 +25,8 @@ function Suggestlist() {
 
                             <Image source={element.item.uri} style={{ height: 200, width: 200 }} />
                             <Text style={styles.suggesttext}>{element.item.name}</Text>
-                            <TouchableOpacity><View style={{ borderColor: "blue", borderWidth: 0.3, justifyContent: "center", paddingTop: 5, paddingBottom: 5, flexDirection: "row" }}>
-                                <Image source={require('../assets/Images/add-contact.png')} style={{ height: 17, width: 17, marginRight: 5 }} />
+                            <TouchableOpacity><View style={styling.addfriend}>
+                                <Image source={images.Contact} style={{ height: 17, width: 17, marginRight: 5 }} />
                                 <Text style={styles.suggesttext}>Add Friend</Text>
                             </View>
                             </TouchableOpacity>

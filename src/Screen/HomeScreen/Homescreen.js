@@ -34,7 +34,7 @@ function Component3() {
             </View>
             {/*--------------------------This is the stories view container----------------------------------- */}
             <View style={styling.flat}>
-                <FlatList
+                <FlatList nestedScrollEnabled
                     horizontal={true}
                     showsHorizontalScrollIndicator={false}
                     data={DATA}

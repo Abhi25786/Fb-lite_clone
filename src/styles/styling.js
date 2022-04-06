@@ -6,6 +6,14 @@ export const styles = StyleSheet.create({
         flex: 1,
 
     },
+    addfriend: {
+        borderColor: "blue",
+        borderWidth: 0.3,
+        justifyContent: "center",
+        paddingTop: 5,
+        paddingBottom: 5,
+        flexDirection: "row"
+    },
     mainline: {
         flexDirection: 'row',
         justifyContent: "space-between",
@@ -16,6 +24,18 @@ export const styles = StyleSheet.create({
 
 
 
+    },
+    statuscss: {
+        backgroundColor: "lightgreen",
+        color: "lightgreen",
+        height: 15,
+        width: 15,
+        position: "absolute",
+        right: 5,
+        bottom: 10,
+        borderRadius: 10,
+        borderColor: "white",
+        borderWidth: 2,
     },
     //first Container
     //Facebook logo css

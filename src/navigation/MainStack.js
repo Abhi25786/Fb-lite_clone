@@ -6,6 +6,8 @@ import Profile from '../Screen/ProfileScreen/Profilemains';
 import HomeStack from './HomeStack';
 
 // import navigationStrings from './navigationStrings';
+import { LogBox } from 'react-native';
+LogBox.ignoreLogs(['VirtualizedLists should never be nested']);
 
 export default function (Stack) {
     return (

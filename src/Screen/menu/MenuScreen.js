@@ -10,9 +10,6 @@ import { useDispatch } from 'react-redux'
 import { logoutContinue } from '../../redux/actions/auth'
 
 
-
-
-
 function MenuScreen({ navigation }) {
     const dispatch = useDispatch();
 
@@ -83,45 +80,49 @@ function MenuScreen({ navigation }) {
 
             <Divider style={{ marginTop: 50 }} />
             {/* -------------------------------------------Pofile click Container-------------------------------- */}
-            <TouchableOpacity onPress={() => navigation.navigate('Abhi Thakur')} accessibilityIgnoresInvertColors={"black"}><View style={menustyle.profilehead}>
-                <View >
-                    <View style={{ justifyContent: "flex-end" }} >
-                        <Image source={images.Profile} style={styling.profilepic} />
+            <ScrollView>
+
+
+                <TouchableOpacity onPress={() => navigation.navigate('Abhi Thakur')} accessibilityIgnoresInvertColors={"black"}><View style={menustyle.profilehead}>
+                    <View >
+                        <View style={{ justifyContent: "flex-end" }} >
+                            <Image source={images.Profile} style={styling.profilepic} />
+                        </View>
+                    </View>
+                    <View >
+                        <Text style={menustyle.headtextcss}>Abhi Thakur</Text>
+                        <Text>View your profile</Text>
                     </View>
                 </View>
-                <View >
-                    <Text style={menustyle.headtextcss}>Abhi Thakur</Text>
-                    <Text>View your profile</Text>
-                </View>
-            </View>
-            </TouchableOpacity>
+                </TouchableOpacity>
 
 
-            <Divider />
+                <Divider />
 
-            {/* --------------------------------------Menu List COntainer--------------------------------------- */}
-            <FlatList
+                {/* --------------------------------------Menu List COntainer--------------------------------------- */}
+                <FlatList
 
-                showsHorizontalScrollIndicator={false}
-                data={DATA}
-                renderItem={(element) => {
-                    return (
-                        <>
+                    showsHorizontalScrollIndicator={false}
+                    data={DATA}
+                    renderItem={(element) => {
+                        return (
+                            <>
 
 
-                            <TouchableOpacity onPress={() => click(element.item)}>
-                                <View style={menustyle.menulistview}>
+                                <TouchableOpacity onPress={() => click(element.item)}>
+                                    <View style={menustyle.menulistview}>
 
-                                    <Image source={element.item.uri} style={menustyle.listimg} />
-                                    <Text style={menustyle.listtext}>{element.item.name}</Text>
+                                        <Image source={element.item.uri} style={menustyle.listimg} />
+                                        <Text style={menustyle.listtext}>{element.item.name}</Text>
 
-                                </View>
-                            </TouchableOpacity>
-                        </>
+                                    </View>
+                                </TouchableOpacity>
+                            </>
 
-                    )
-                }}
-            />
+                        )
+                    }}
+                />
+            </ScrollView>
 
 
 

@@ -10,7 +10,7 @@ function Statussaction() {
                 <View style={styling.border}>
                     <View style={{ justifyContent: "center", alignItems: "center" }} >
                         <TouchableOpacity><Image source={images.Profile} style={styling.profilepic} /></TouchableOpacity>
-                        <Text style={{ backgroundColor: "lightgreen", color: "lightgreen", height: 15, width: 15, position: "absolute", right: 5, bottom: 10, borderRadius: 10, borderColor: "white", borderWidth: 2, }}> </Text>
+                        <Text style={styling.statuscss}> </Text>
 
                     </View>
 
