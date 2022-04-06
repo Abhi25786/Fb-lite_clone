@@ -10,7 +10,7 @@ import { images } from '../../assets/Pics'
 
 function Component3() {
     return (
-        <ScrollView style={styling.ScrollViewborder} scrollIndicatorInsets={false} >
+        <ScrollView style={styling.ScrollViewborder} showsVerticalScrollIndicator={false} >
 
             <Statussaction />
             <View style={styling.border} >

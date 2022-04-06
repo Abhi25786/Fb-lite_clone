@@ -16,17 +16,31 @@ function LogingPage({ navigation }) {
     const [name, lastName] = useState('');
     const [show, setshow] = useState(false)
     const [lastshow, setlastshow] = useState(false)
-
+    // const passwordtext = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*{6,})$/
+    const nameregex = /^[\w]{10,}&/
+    const strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
     const Click = () => {
-        if (text == "") {
+        // if (text == "") {
+        //     setshow(true)
+        // } else if (name == '') {
+        //     setshow(false)
+        //     setlastshow(true)
+        // } else {
+        //     setlastshow(false)
+        //     dispatch(loginContinue())
+        // }
+        if (nameregex.test(text)) {
+            dispatch(loginContinue())
+        } else if (strongRegex.test(name)) {
+
+            dispatch(loginContinue())
+        } else if (text == '') {
             setshow(true)
-        } else if (name == "") {
+        } else if (name == '') {
             setshow(false)
             setlastshow(true)
-        } else {
-            setlastshow(false)
-            dispatch(loginContinue())
         }
+
     }
     // dispatch(loginContinue())
     return (

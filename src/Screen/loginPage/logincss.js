@@ -35,7 +35,8 @@ const logincss = StyleSheet.create({
         paddingVertical: 8
     },
     errorcss: {
-        color: "red"
+        color: "red",
+        marginHorizontal: 10
     }
 });
 export default logincss
