@@ -14,16 +14,21 @@ function LogingPage({ navigation }) {
     const [text, setText] = useState('');
     const [name, lastName] = useState('');
     const [show, setshow] = useState(false)
+    const [lastshow, setlastshow] = useState(false)
 
     const Click = () => {
-        if (text === '') {
+        if (text == "") {
             setshow(true)
-        } else if (name === '') {
-            setshow(true)
+        } else if (name == "") {
+            setshow(false)
+            setlastshow(true)
         } else {
+
+            setlastshow(false)
             dispatch(loginContinue())
         }
     }
+    // dispatch(loginContinue())
     return (
 
         // ----------- ---------------------------------------Login Container---------------------------------------//
@@ -41,18 +46,18 @@ function LogingPage({ navigation }) {
 
                     <Text style={logincss.text}>Mobile number or email</Text>
                     <View style={logincss.textinput}>
-                        <TextInput placeholder='Enter email or number' onChangeText={setText} />
+                        <TextInput placeholder='Enter email or number' onChangeText={(event) => setText(event)} />
                     </View>
                     {
-                        show ? <Text>Enter Valid email or Number</Text> : null
+                        show ? <Text style={logincss.errorcss}>Enter Valid email or Number</Text> : null
                     }
 
                     <Text style={logincss.text}>Password</Text>
                     <View style={logincss.textinput}>
-                        <TextInput placeholder='Enter password' onChangeText={lastName} />
+                        <TextInput placeholder='Enter password' onChangeText={(event) => lastName(event)} />
                     </View>
                     {
-                        show ? <Text>Enter Password</Text> : null
+                        lastshow ? <Text style={logincss.errorcss}>Enter Password</Text> : null
                     }
                 </View>
                 {/* --------------------------------------------Buttons Container-------------------------------- */}

@@ -33,6 +33,9 @@ const logincss = StyleSheet.create({
     textcolour: {
         color: "white",
         paddingVertical: 8
+    },
+    errorcss: {
+        color: "red"
     }
 });
 export default logincss
