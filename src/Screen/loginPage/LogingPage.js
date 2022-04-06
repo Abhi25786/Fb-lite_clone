@@ -17,7 +17,7 @@ function LogingPage({ navigation }) {
     const [show, setshow] = useState(false)
     const [lastshow, setlastshow] = useState(false)
     // const passwordtext = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*{6,})$/
-    const nameregex = /^[\w]{10,}&/
+    const nameregex = /^[\w]{10}$/
     const strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
     const Click = () => {
         // if (text == "") {
@@ -29,8 +29,9 @@ function LogingPage({ navigation }) {
         //     setlastshow(false)
         //     dispatch(loginContinue())
         // }
+
         if (nameregex.test(text)) {
-            dispatch(loginContinue())
+
         } else if (strongRegex.test(name)) {
 
             dispatch(loginContinue())
@@ -42,6 +43,8 @@ function LogingPage({ navigation }) {
         }
 
     }
+
+
     // dispatch(loginContinue())
     return (
 
